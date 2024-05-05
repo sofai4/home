@@ -1,1 +1,8 @@
-ECHO is on.
+html {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
