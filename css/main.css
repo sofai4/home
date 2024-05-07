@@ -47,6 +47,7 @@ nav button  {
     width: 5cm;
     padding: 6px;
     margin-bottom: 30px;
+    margin-left: 2%;
 }
 nav .welcom img {
     display: none;
