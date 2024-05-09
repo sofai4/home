@@ -94,3 +94,32 @@ nav .welcom img:hover {
     text-align: center;
     line-height: 2;
 }
+.degree {   
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    background-color: #17202A;
+    color: var(--mainColor);
+    border-radius: 20px;
+    padding: 20px;
+}
+.degree select {
+    width: 70%;
+    margin: auto;
+    background: #2E4053;
+    color: #2ECC71;
+    text-align: center;
+    height: 36px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.degree select option {
+    color: #FBFCFC;
+    padding: 30px;
+}
+.degree .res {
+    color: #CD6155;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+}
