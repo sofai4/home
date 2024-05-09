@@ -1,5 +1,5 @@
 :root {
-    --mainColor: #fff; 
+    --mainColor: #FBFCFC ; 
 }
 * {
     box-sizing: border-box;
@@ -39,19 +39,57 @@ nav .welcom  p {
     text-transform: capitalize
 }
 nav button  {
-    position: relative;
-    left: 15%;
     text-transform: capitalize;
     background-color: #17202A;
     color: var(--mainColor);
     width: 5cm;
     padding: 6px;
+    border-radius: 5px;
     margin-bottom: 30px;
-    margin-left: 2%;
+    margin-left: 23%;
 }
 nav .welcom img {
     display: none;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
+    box-shadow: 5px 5px 5px #2ECC71;
+    filter: blur(0.5px);
+    transition: 600ms;
+}
+nav .welcom img:hover {
+    display: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 70%;
+    box-shadow: 5px 5px 5px var(--mainColor);
+    filter: blur(0px);
+    transition: 900ms;
+}
+.about {
+    margin: 4%;
+    background-color: #17202A;
+    color: var(--mainColor);
+    border-radius: 20px;
+    padding: 20px;
+}
+.about table {
+    border: solid 3px;
+    width: 100%;
+    text-align: center;
+    line-height: 4;
+    border-radius: 10px;
+}
+.about table td {
+    background-color: #2E4053;
+    font-weight: bold;
+}
+.about table thead td {
+    color: #2ECC71;;
+}
+.about p {
+    color: #CD6155;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
 }
