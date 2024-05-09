@@ -118,7 +118,7 @@ nav .welcom img:hover {
     padding: 30px;
 }
 .degree .res {
-    color: #CD6155;
+    color: var(--mainColor);
     font-weight: bold;
     text-align: center;
     margin-top: 3%;
