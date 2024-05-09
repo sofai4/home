@@ -56,6 +56,7 @@ nav .welcom img {
     box-shadow: 5px 5px 5px #2ECC71;
     filter: blur(0.5px);
     transition: 600ms;
+    margin-bottom: 20px;
 }
 nav .welcom img:hover {
     display: none;
