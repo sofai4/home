@@ -1,5 +1,29 @@
 a {
     text-decoration: none;
-    color: #76D7C4;
+    color: #2ECC71;
     font-weight: bold; 
 }
+a:hover {
+    color: #bb00ff;
+}
+.top {
+    display: none;
+    border: solid salmon;
+    height: 30px;
+    width: 100px;
+    background-color: inherit;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px;
+}
+.p-of-soft  {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #2ECC71;
+ }
+ .ul-of-soft  {
+    display: flex;
+    list-style: decimal;
+    justify-content: space-around;
+ }
