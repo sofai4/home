@@ -27,3 +27,13 @@ a:hover {
     list-style: decimal;
     justify-content: space-around;
  }
+
+ @media (max-width: 901px) { 
+    .ul-of-soft  {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        list-style: decimal;
+        justify-content: space-around;
+     }
+ }
