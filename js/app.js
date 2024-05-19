@@ -3,12 +3,12 @@ $().ready(function() {
     $('img').show(800)
 })
 function makeThebarsMove(){
-    $('.technic').show(3000)
+    $('.technic').show(1000)
     
 }
 document.onmousemove = function() {
      
-    if(scrollY > 392) {
+    if(scrollY > 352) {
         // console.log("you are here")
         makeThebarsMove()
      }
@@ -16,7 +16,7 @@ document.onmousemove = function() {
 }
 
 let  clickOnKey = addEventListener('keydown',function(e) {
-    if(scrollY > 392) {
+    if(scrollY > 352) {
         // console.log("you are here")
         makeThebarsMove()
      }
