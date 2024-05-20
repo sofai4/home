@@ -37,3 +37,19 @@ a:hover {
         justify-content: space-around;
      }
  }
+
+ .card {
+    background-color: #110F0F;
+    color: #F2F8EF;
+    width: 420px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 1%;
+}
+.card a {
+    line-height: 4;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}

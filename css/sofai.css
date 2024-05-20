@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.welcom-to-sofai {
+    padding: 3%;
+    background-color: #F2F8EF;
+}
+.welcom-to-sofai h1 {
+    color: #110F0F;
+}
+.welcom-to-sofai p {
+    text-align: center;
+    line-height: 2;
+}
+.welcom-to-sofai img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    left: 36%;
+}

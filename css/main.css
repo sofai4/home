@@ -9,6 +9,7 @@
 nav {
     background-color: #17202A;
     color: var(--mainColor);
+    padding-bottom: 10px;
 }
 nav h1 {
     margin: 0;
@@ -302,13 +303,6 @@ nav .welcom img:hover {
     line-height: 3;
     transition: 900ms;
 }
-.who:hover {
-    transition: 900ms;
-    color: #17202A;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 20px;
-}
 .short-links ul {
     display: flex;
     list-style: none;
@@ -325,12 +319,6 @@ nav .welcom img:hover {
     line-height: 5;
     margin-left: 30px;
     text-transform: uppercase;
-}
-.short-links:hover {
-    transition: 900ms;
-    color: #17202A;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .short-links {
@@ -604,13 +592,6 @@ nav .welcom img:hover {
         line-height: 3;
         transition: 900ms;
     }
-    .who:hover {
-        transition: 900ms;
-        color: #17202A;
-        padding: 10px;
-        border-radius: 10px;
-        margin-right: 20px;
-    }
     .short-links ul {
         display: flex;
         list-style: none;
@@ -627,12 +608,6 @@ nav .welcom img:hover {
         line-height: 5;
         margin-left: 30px;
         text-transform: uppercase;
-    }
-    .short-links:hover {
-        transition: 900ms;
-        color: #17202A;
-        padding: 20px;
-        border-radius: 10px;
     }
     
     .short-links {
