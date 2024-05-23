@@ -1,7 +1,9 @@
 a {
     text-decoration: none;
     color: #2ECC71;
-    font-weight: bold; 
+    /* font-weight: bold;  */
+    position: relative;
+    left: -6%;
 }
 a:hover {
     color: #bb00ff;
