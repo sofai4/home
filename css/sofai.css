@@ -21,3 +21,33 @@
     position: relative;
     left: 36%;
 }
+@media (min-width: 600px) and (max-width: 840px) {
+    /* this is ipade */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container div {
+        margin-bottom: 3%;
+    }
+}
+
+/* now we gona make it for the smart phone size */
+@media (min-width: 300px) and (max-width: 599px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container div {
+        margin-bottom: 3%;
+        width: 300px;
+        height: fit-content;
+    }
+    .welcom-to-sofai img {
+        left: 20%;
+        width: 200px;
+        height: 200px
+    }
+}
