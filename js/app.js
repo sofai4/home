@@ -29,3 +29,14 @@ let  clickOnKey = addEventListener('keydown',function(e) {
 
 //     ft.textContent = "hello world"
 
+let sub = document.querySelector('.sub'),
+    sup = document.querySelector('.support');
+
+sub.onclick = function() {
+   $('nav ul').slideToggle().css({
+    display: 'flex'
+   })
+}
+sup.onclick = function() {
+    location.href = '/support';
+}
