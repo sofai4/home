@@ -23,3 +23,9 @@ let  clickOnKey = addEventListener('keydown',function(e) {
  
 })
 
+// changer content of footer 
+
+// let ft = document.querySelector('footer')
+
+//     ft.textContent = "hello world"
+

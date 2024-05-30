@@ -1,7 +1,7 @@
 a {
     text-decoration: none;
     color: #2ECC71;
-    /* font-weight: bold;  */
+    font-weight: bold; 
     position: relative;
     left: -6%;
 }
@@ -62,4 +62,17 @@ a:hover {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+}
+.button {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #2ECC71;
+    color: #F2F8EF;
+    outline: none;
+    border: none;
+}
+.h2 {
+    font-size: x-large;
 }

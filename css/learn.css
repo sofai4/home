@@ -1,0 +1,38 @@
+h1 {
+    text-transform: uppercase;
+    font-size: x-large;
+    margin-left: 2%;
+}
+.ifram {
+    width: 680px;
+    height: 300px;
+    border-radius: 8px;
+}
+button {
+    display: block;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+p{
+    padding: 5%;
+    text-align: center;
+    line-height: 2;
+}
+.info ul  {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-transform: capitalize;
+    margin-left: 5%;
+    font-weight: bold;
+}
+@media (min-width: 300px) and (max-width: 760px) {
+    .ifram {
+        width: 80%;
+        height: 270px;
+    }
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+}

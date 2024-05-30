@@ -622,7 +622,12 @@ nav .welcom img:hover {
         display: none;
     }
     .about {
-        display: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .about td {
+        padding: 5px;
     }
     .res {
         text-align: center;
