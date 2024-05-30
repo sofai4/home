@@ -154,7 +154,6 @@ nav .welcom img:hover {
     background-color: #17202A;
     color: var(--mainColor);
     border-radius: 20px;
-    padding: 20px;
  }
  footer {
     display: flex;
@@ -282,7 +281,7 @@ nav .welcom img:hover {
 }
 .youtube img {
     position: relative;
-    left: 30%;
+    left: 20%;
     border-radius: 100%;
 }
 .youtube  p {
@@ -590,7 +589,7 @@ nav .welcom img:hover {
     }
     .youtube {
       position: relative;
-      left: 10%;
+      left: 4%;
     }
     .youtube img {
         position: relative;
