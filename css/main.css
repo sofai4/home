@@ -56,14 +56,84 @@ header img {
 }
 
 .who-iam {
+    padding-top: 10px;
     margin-top: 8%;
     background-color: #8B1BE2;
     color: #EBE7EE;
 }
 
 .who-iam p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2;
     width: 70%;
     margin-left: 14%;
+}
+
+.sell {
+    position: relative;
+    top: -31px;
+    /* background-color: rgb(174, 67, 67); */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;  
+    padding-bottom: 20px;
+    padding-top: 120px;
+    cursor: pointer;
+}
+
+.sell p {
+    font-size: medium;
+    line-height: 2;
+    color: #010;
+}
+
+.sell svg {
+    color: #1BE266;
+    font-size: 35px;
+}
+
+.sell div {
+    margin-left: 3%;
+}
+
+.sell .sell-title {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.sell .sell-price {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #8B1BE2;
+}
+
+.sell .sell-desc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: 90%; */
+    text-align: center;
+    padding: 10px;
+}
+
+.sell .sell-desc::first-letter {
+    font-size: large;
+    color: #8B1BE2;
+    font-weight: bold;
+}
+
+.sell .sell-motiv {
+    color: #8B1BE2;    
+    font-style: italic;
+}
+.sell button {
+    display: inline-block;
+    width: 70%;
+    height: 30px;
+    border: none;
+    background-color: #8B1BE2;
+    color: #EBE7EE;
+    font-weight: bold;
+    border-radius: 10px;
 }
