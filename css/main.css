@@ -136,4 +136,149 @@ header img {
     color: #EBE7EE;
     font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
+}
+.youtube {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.youtube img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    transition: 900ms;
+}
+.youtube .flex {
+    justify-content: space-around;
+}
+.youtube p {
+    padding: 40px;
+}
+.youtube img:hover {
+    transition: 900ms;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.skills {
+    background-color: #8B1BE2;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills .char {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+@keyframes slidein {
+    from {
+        translate: 2vw 100;
+        scale: -165% -1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.char1 {
+    animation: 3s infinite alternate slidein;
+    background-color: #F7F9F9;
+    cursor: pointer;
+    position: relative;
+}
+.char2 {
+    animation: 1s infinite alternate slidein;
+    display: none;
+    background-color: #2ECC71;
+    cursor: pointer;
+    position: relative;
+}
+.char3 {
+    animation: 1s infinite alternate slidein;
+    display: none;
+    background-color: #F4D03F;
+    cursor: pointer;
+    position: relative;
+}
+.eye1 {
+    background: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 34px;
+    top: 44px;
+}
+.eye1::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #EBE7EE;
+}
+.eye2::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #EBE7EE;
+}
+.eye2 {
+    background: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 95px;
+    top: 14px;
+}
+.mouth {
+    background: black;
+    height: 30px;
+    width: 59%;
+    position: relative;
+    left: 33px;
+    top: 34px;
+    border-radius: 9px;
+    color: #EBE7EE;
+    text-align: center;
+    overflow: hidden;
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-to-the-game {
+    text-transform: uppercase;
+}
+.arrow svg {
+    width: 390px;
+    height: 50px;
+    color: #1BE266;
+    cursor: pointer;
+}
+.map {
+    display: none;
+    height: 100vb;
+    background-color: #010;
+    color: #F7F9F9;
+}
+.map svg {
+    position: relative;
+    top: 10%;
+    left: 90%;
+    height: 30px;
+    width: 30px;
+    opacity: 0.9;
+    cursor: pointer;
 }
