@@ -272,6 +272,7 @@ header img {
     height: 100vb;
     background-color: #010;
     color: #F7F9F9;
+    overflow: hidden;
 }
 .map svg {
     position: relative;
@@ -281,4 +282,17 @@ header img {
     width: 30px;
     opacity: 0.9;
     cursor: pointer;
+}
+.map .skills {
+    display: block;
+    width: unset;
+    height: unset;
+    background-color: unset;
+}
+.map .skills .char {
+    animation: 0s infinite alternate slidein;
+    position: relative;    
+}
+.map .skills .char1 {
+    position: relative;
 }
