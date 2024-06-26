@@ -60,7 +60,7 @@ right.onclick = function() {
 // make function for the charctare
 
 char2.onclick = function() {
-    console.log("hi")
+    alert("Use the A D W S For Moving the charctare")
     let bd = document.querySelector('#game')
     let btnBd = document.querySelector('#close')
     btnBd.onclick = function() {
@@ -113,6 +113,7 @@ char2.onclick = function() {
 
 
 char1.onclick = function() {
+    alert("Use the A D W S For Moving the charctare")
     console.log("hi")
     let bd = document.querySelector('#game')
     let btnBd = document.querySelector('#close')
@@ -137,7 +138,7 @@ char1.onclick = function() {
          
             move++
             char1IN.style.top = move + 'cm';
-        }else if (event.key == 'w' || event.key == 'ArrowUp') {
+        }else if (event.key == 'w') {
             location.href = "#game"
             let char1IN = document.querySelector('.map .skills .char1')
             console.log(char1IN)
@@ -163,7 +164,7 @@ char1.onclick = function() {
 // charctar 3 
 
 char3.onclick = function() {
-    console.log("hi")
+    alert("Use the A D W S For Moving the charctare")
     let bd = document.querySelector('#game')
     let btnBd = document.querySelector('#close')
     btnBd.onclick = function() {
@@ -208,3 +209,5 @@ char3.onclick = function() {
         }
     })
 }
+
+// use the offsite to track the charctare

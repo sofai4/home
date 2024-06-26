@@ -296,3 +296,16 @@ header img {
 .map .skills .char1 {
     position: relative;
 }
+.map .line {
+    height: 35px;
+    width: 98%;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    font-size: medium;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 6px;
+    margin-bottom: 7%;
+}
