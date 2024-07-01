@@ -56,6 +56,23 @@ right.onclick = function() {
     move()
     console.log(count)
 }
+function charInPlace() {
+    let b = document.querySelector('.map .skills .char1')
+    if(b.style.top == '5cm' && b.style.left == '1cm') {
+        console.log("state 1")
+        $('.map .box .basic').css({width: '400px',height: '400px'})
+    }else if (b.style.top == '5cm' && b.style.left == '8cm') {
+        console.log("state 2")
+    }else if (b.style.top == '5cm' && b.style.left == '15cm') {
+        console.log("state 3")
+    }else if (b.style.top == '5cm' && b.style.left == '21cm') {
+        console.log("state 4")
+    }else if (b.style.top == '5cm' && b.style.left == '28cm') {
+        console.log("state 5")
+    }else if (b.style.top == '5cm' && b.style.left == '35cm') {
+        console.log("state 6")
+    }
+}
 
 // make function for the charctare
 
@@ -134,28 +151,37 @@ char1.onclick = function() {
         if(event.key == 's' || event.key == 'ArrowDown') {
             location.href = "#game"
             let char1IN = document.querySelector('.map .skills .char1')
-            console.log(char1IN)
-         
             move++
             char1IN.style.top = move + 'cm';
+            console.log(char1IN.style.top)
+            console.log(char1IN.style.left)
+            charInPlace()
         }else if (event.key == 'w') {
             location.href = "#game"
             let char1IN = document.querySelector('.map .skills .char1')
             console.log(char1IN)
             --move
             char1IN.style.top = move + 'cm';
+            console.log(char1IN.style.top)
+            console.log(char1IN.style.left)
+            charInPlace()
         }else if(event.key == 'a' || event.key == 'ArrowLeft') {
             location.href = "#game"
             let char1IN = document.querySelector('.map .skills .char1')
             console.log(char1IN)
             --left
             char1IN.style.left = left + 'cm';
+            console.log(char1IN.style.top)
+            console.log(char1IN.style.left)
         }else if (event.key == 'd' || event.key == 'ArrowRight') {
             location.href = "#game"
             let char1IN = document.querySelector('.map .skills .char1')
             console.log(char1IN)
             left++
             char1IN.style.left = left + 'cm';
+            console.log(char1IN.style.top)
+            console.log(char1IN.style.left)
+            charInPlace()
         }
     })
 }
