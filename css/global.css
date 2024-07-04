@@ -1,26 +1,29 @@
 a {
-    text-decoration: none;
-    color:  #1BE266;
-    font-weight: bold;
-    font-family: sans-serif;
+  text-decoration: none;
+  color: #1be266;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .flex {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 .h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
+}
+#ball2 {
+    display: none;
 }

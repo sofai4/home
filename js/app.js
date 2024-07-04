@@ -1,7 +1,8 @@
-let char1 = document.querySelector('.char1'),
-    char2 = document.querySelector('.char2'),
-    char3 = document.querySelector('.char3');
-    // now let make a div when the game gona happened
+let char1 = document.querySelector(".char1"),
+  char2 = document.querySelector(".char2"),
+  char3 = document.querySelector(".char3");
+  var i = 0;
+// now let make a div when the game gona happened
 
 // first i will make the mouth content changer with jquery
 let mouth1 = document.querySelector(".char1 .mouth");
@@ -13,227 +14,245 @@ mouth2.textContent = "I'm Video Editor";
 mouth3.textContent = "I'm Voice Commentator";
 // now we gona do animation to the char;
 
+let right = document.getElementById("right"),
+  left = document.getElementById("left");
 
-let right = document.getElementById('right'),
-    left  = document.getElementById('left');
-
-const myChars = ['.char1','.char2','.char3'];
+const myChars = [".char1", ".char2", ".char3"];
 var count = 0;
 function move() {
-    if(count == 1) {
-        $(myChars[0]).fadeOut(700,function(){
-            $(myChars[count]).fadeIn(900)
-            $(myChars[2]).fadeOut(900)
-        })
-    }else if(count == 2) {
-        $(myChars[1]).hide(700,function(){
-            $(myChars[count]).show(700)
-            $(myChars[3]).hide(700)
-        })
-    }else if(count == 3) {
-        count = 0;
-        if(count == 0) {
-            $(myChars[2]).slideUp(700,function(){
-                $(myChars[count]).slideDown(900)
-                $(myChars[1]).hide(700)
-            })
-        }
-    }else if(count == 0) {
-        $(myChars[2]).slideUp(700,function(){
-            $(myChars[count]).slideDown(900)
-            $(myChars[1]).hide(700)
-        })
-    }else if (count < 0 ) {
-        count = 0
+  if (count == 1) {
+    $(myChars[0]).fadeOut(700, function () {
+      $(myChars[count]).fadeIn(900);
+      $(myChars[2]).fadeOut(900);
+    });
+  } else if (count == 2) {
+    $(myChars[1]).hide(700, function () {
+      $(myChars[count]).show(700);
+      $(myChars[3]).hide(700);
+    });
+  } else if (count == 3) {
+    count = 0;
+    if (count == 0) {
+      $(myChars[2]).slideUp(700, function () {
+        $(myChars[count]).slideDown(900);
+        $(myChars[1]).hide(700);
+      });
     }
+  } else if (count == 0) {
+    $(myChars[2]).slideUp(700, function () {
+      $(myChars[count]).slideDown(900);
+      $(myChars[1]).hide(700);
+    });
+  } else if (count < 0) {
+    count = 0;
+  }
 }
-left.onclick = function(){
-    count++
-    move() 
-}
-right.onclick = function() {
-    count--
-    move()
-    console.log(count)
-}
-function charInPlace() {
-    let b = document.querySelector('.map .skills .char1')
-    if(b.style.top == '5cm' && b.style.left == '1cm') {
-        console.log("state 1")
-        $('.map .box .basic').css({width: '400px',height: '400px'})
-    }else if (b.style.top == '5cm' && b.style.left == '8cm') {
-        console.log("state 2")
-    }else if (b.style.top == '5cm' && b.style.left == '15cm') {
-        console.log("state 3")
-    }else if (b.style.top == '5cm' && b.style.left == '21cm') {
-        console.log("state 4")
-    }else if (b.style.top == '5cm' && b.style.left == '28cm') {
-        console.log("state 5")
-    }else if (b.style.top == '5cm' && b.style.left == '35cm') {
-        console.log("state 6")
-    }
-}
+left.onclick = function () {
+  count++;
+  move();
+};
+right.onclick = function () {
+  count--;
+  move();
+  console.log(count);
+};
 
 // make function for the charctare
 
-char2.onclick = function() {
-    alert("Use the A D W S For Moving the charctare")
-    let bd = document.querySelector('#game')
-    let btnBd = document.querySelector('#close')
-    btnBd.onclick = function() {
-        bd.style.display = "none";
-        location.href = "#start"
-    }   
+char1.onclick = function () {
+    // alert("Use the A D W S For Moving the charctare")
+    console.log("hi");
+    let bd = document.querySelector("#game");
+    let btnBd = document.querySelector("#close");
+    btnBd.onclick = function () {
+      bd.style.display = "none";
+      location.href = "#start";
+    };
     bd.style.display = "block";
-    bd.style.backgroundColor = 'black'
-    bd.style.color = 'green'
-    location.href = "#game"
- // now the user in the game let see where he is clicking
- let move = 1;
- let left = 1;
-    addEventListener('keydown',function(event){
-        console.log(event.key)
-        // now we make the movement of the charctare
-        if(event.key == 's' || event.key == 'ArrowDown') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char2')
-            console.log(char1IN)
-         
-            move++
-            char1IN.style.top = move + 'cm';
-        }else if (event.key == 'w' || event.key == 'ArrowUp') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char2')
-            console.log(char1IN)
-            --move
-            char1IN.style.top = move + 'cm';
-        }else if(event.key == 'a' || event.key == 'ArrowLeft') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char2')
-            console.log(char1IN)
-            --left
-            char1IN.style.left = left + 'cm';
-        }else if (event.key == 'd' || event.key == 'ArrowRight') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char2')
-            console.log(char1IN)
-            left++
-            char1IN.style.left = left + 'cm';
+    bd.style.backgroundColor = "black";
+    bd.style.color = "white";
+    location.href = "#game";
+    // now the user in the game let see where he is clicking
+    let move = 1;
+    let left = 1;
+    addEventListener("keydown", function (event) {
+      console.log(event.key);
+      // now we make the movement of the charctare
+      if (event.key == "s" || event.key == "ArrowDown") {
+        location.href = "#game";
+        let char1IN = document.querySelector(".map .skills .char1");
+        move++;
+        char1IN.style.top = move + "cm";
+        console.log(char1IN.style.top);
+        console.log(char1IN.style.left);
+      } else if (event.key == "w") {
+        location.href = "#game";
+        let char1IN = document.querySelector(".map .skills .char1");
+        console.log(char1IN);
+        --move;
+        char1IN.style.top = move + "cm";
+        console.log(char1IN.style.top);
+        console.log(char1IN.style.left);
+      } else if (event.key == "a" || event.key == "ArrowLeft") {
+        location.href = "#game";
+        let char1IN = document.querySelector(".map .skills .char1");
+        console.log(char1IN);
+        --left;
+        char1IN.style.left = left + "cm";
+        console.log(char1IN.style.top);
+        console.log(char1IN.style.left);
+      } else if (event.key == "d" || event.key == "ArrowRight") {
+        location.href = "#game";
+        let char1IN = document.querySelector(".map .skills .char1");
+        console.log(char1IN);
+        left++;
+        char1IN.style.left = left + "cm";
+        console.log(char1IN.style.top);
+        console.log(char1IN.style.left);
+      } else if (event.key == " ") {
+        i++
+        function makeMove() {
+            let ball = document.getElementById('ball1');
+            $(ball).css({
+                left: '90%'
+            })
+            setTimeout(() => {
+                $(ball).css({
+                    display: 'none',
+                })
+            }, 900);
+            setTimeout(() => {
+                $(ball).css({
+                    display: 'block',
+                    left: '0%'
+                }) 
+            }, 1200);
         }
-    })
-
-}
-
-
-//now let work on charctar 2 
-
-
-
-char1.onclick = function() {
-    alert("Use the A D W S For Moving the charctare")
-    console.log("hi")
-    let bd = document.querySelector('#game')
-    let btnBd = document.querySelector('#close')
-    btnBd.onclick = function() {
-        bd.style.display = "none";
-        location.href = "#start"
-    }   
-    bd.style.display = "block";
-    bd.style.backgroundColor = 'black'
-    bd.style.color = 'white'
-    location.href = "#game"
- // now the user in the game let see where he is clicking
- let move = 1;
- let left = 1;
-    addEventListener('keydown',function(event){
-        console.log(event.key)
-        // now we make the movement of the charctare
-        if(event.key == 's' || event.key == 'ArrowDown') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char1')
-            move++
-            char1IN.style.top = move + 'cm';
-            console.log(char1IN.style.top)
-            console.log(char1IN.style.left)
-            charInPlace()
-        }else if (event.key == 'w') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char1')
-            console.log(char1IN)
-            --move
-            char1IN.style.top = move + 'cm';
-            console.log(char1IN.style.top)
-            console.log(char1IN.style.left)
-            charInPlace()
-        }else if(event.key == 'a' || event.key == 'ArrowLeft') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char1')
-            console.log(char1IN)
-            --left
-            char1IN.style.left = left + 'cm';
-            console.log(char1IN.style.top)
-            console.log(char1IN.style.left)
-        }else if (event.key == 'd' || event.key == 'ArrowRight') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char1')
-            console.log(char1IN)
-            left++
-            char1IN.style.left = left + 'cm';
-            console.log(char1IN.style.top)
-            console.log(char1IN.style.left)
-            charInPlace()
+        // console.log(i)
+        if(i === 0) {
+            console.log('case', i)
+        }else if (i === 1) {
+            console.log('case', i)
+            makeMove()
+        }else if (i === 2) {
+            console.log('case', i)
+            makeMove()
+        }else if (i === 3) {
+            console.log('case', i)
+            makeMove()
+        }else if (i === 4) {
+            console.log('case', i)
+            makeMove()
+        }else if (i === 5) {
+            console.log('case', i)
+            makeMove()
+        }else if (i === 6) {
+            console.log('case', i)
+            makeMove()
+        }else {
+            console.log('case is done')
         }
-    })
-}
+      }
+    });
+  };
 
+  
+char2.onclick = function () {
+  // alert("Use the A D W S For Moving the charctare")
+  let bd = document.querySelector("#game");
+  let btnBd = document.querySelector("#close");
+  btnBd.onclick = function () {
+    bd.style.display = "none";
+    location.href = "#start";
+  };
+  bd.style.display = "block";
+  bd.style.backgroundColor = "black";
+  bd.style.color = "green";
+  location.href = "#game";
+  // now the user in the game let see where he is clicking
+  let move = 1;
+  let left = 1;
+  addEventListener("keydown", function (event) {
+    console.log(event.key);
+    // now we make the movement of the charctare
+    if (event.key == "s" || event.key == "ArrowDown") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char2");
+      console.log(char1IN);
 
-// charctar 3 
+      move++;
+      char1IN.style.top = move + "cm";
+    } else if (event.key == "w" || event.key == "ArrowUp") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char2");
+      console.log(char1IN);
+      --move;
+      char1IN.style.top = move + "cm";
+    } else if (event.key == "a" || event.key == "ArrowLeft") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char2");
+      console.log(char1IN);
+      --left;
+      char1IN.style.left = left + "cm";
+    } else if (event.key == "d" || event.key == "ArrowRight") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char2");
+      console.log(char1IN);
+      left++;
+      char1IN.style.left = left + "cm";
+    }
+  });
+};
 
-char3.onclick = function() {
-    alert("Use the A D W S For Moving the charctare")
-    let bd = document.querySelector('#game')
-    let btnBd = document.querySelector('#close')
-    btnBd.onclick = function() {
-        bd.style.display = "none";
-        location.href = "#start"
-    }   
-    bd.style.display = "block";
-    bd.style.backgroundColor = 'black'
-    bd.style.color = 'gold'
-    location.href = "#game"
- // now the user in the game let see where he is clicking
- let move = 1;
- let left = 1;
-    addEventListener('keydown',function(event){
-        console.log(event.key)
-        // now we make the movement of the charctare
-        if(event.key == 's' || event.key == 'ArrowDown') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char3')
-            console.log(char1IN)
-         
-            move++
-            char1IN.style.top = move + 'cm';
-        }else if (event.key == 'w' || event.key == 'ArrowUp') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char3')
-            console.log(char1IN)
-            --move
-            char1IN.style.top = move + 'cm';
-        }else if(event.key == 'a' || event.key == 'ArrowLeft') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char3')
-            console.log(char1IN)
-            --left
-            char1IN.style.left = left + 'cm';
-        }else if (event.key == 'd' || event.key == 'ArrowRight') {
-            location.href = "#game"
-            let char1IN = document.querySelector('.map .skills .char3')
-            console.log(char1IN)
-            left++
-            char1IN.style.left = left + 'cm';
-        }
-    })
-}
+//now let work on charctar 2
+
+// charctar 3
+
+char3.onclick = function () {
+  // alert("Use the A D W S For Moving the charctare")
+  let bd = document.querySelector("#game");
+  let btnBd = document.querySelector("#close");
+  btnBd.onclick = function () {
+    bd.style.display = "none";
+    location.href = "#start";
+  };
+  bd.style.display = "block";
+  bd.style.backgroundColor = "black";
+  bd.style.color = "gold";
+  location.href = "#game";
+  // now the user in the game let see where he is clicking
+  let move = 1;
+  let left = 1;
+  addEventListener("keydown", function (event) {
+    console.log(event.key);
+    // now we make the movement of the charctare
+    if (event.key == "s" || event.key == "ArrowDown") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char3");
+      console.log(char1IN);
+
+      move++;
+      char1IN.style.top = move + "cm";
+    } else if (event.key == "w" || event.key == "ArrowUp") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char3");
+      console.log(char1IN);
+      --move;
+      char1IN.style.top = move + "cm";
+    } else if (event.key == "a" || event.key == "ArrowLeft") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char3");
+      console.log(char1IN);
+      --left;
+      char1IN.style.left = left + "cm";
+    } else if (event.key == "d" || event.key == "ArrowRight") {
+      location.href = "#game";
+      let char1IN = document.querySelector(".map .skills .char3");
+      console.log(char1IN);
+      left++;
+      char1IN.style.left = left + "cm";
+    }
+  });
+};
 
 // use the offsite to track the charctare

@@ -1,179 +1,180 @@
 * {
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
 }
 
 nav img {
-    width: 2cm;
-    height: 2cm;
-    border-radius: 17px;
-    transition: 900ms;
+  width: 2cm;
+  height: 2cm;
+  border-radius: 17px;
+  transition: 900ms;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    margin-top: 9%;
+  list-style: none;
+  display: flex;
+  margin-top: 9%;
 }
 
-nav ul  a {
-    transition: 900ms;
-    margin-left: 15%;
+nav ul a {
+  transition: 900ms;
+  margin-left: 15%;
 }
 
 nav ul a:hover {
-    transition: 900ms;
-    color: #8B1BE2;
+  transition: 900ms;
+  color: #8b1be2;
 }
 
 nav ul a:hover::after {
-    content: '';
-    display: flex;
-    height: 5px;
-    background-color: #8B1BE2;
+  content: "";
+  display: flex;
+  height: 5px;
+  background-color: #8b1be2;
 }
 
 nav img:hover {
-    transition: 900ms;
-    box-shadow: 10px 5px 5px #8B1BE2;
+  transition: 900ms;
+  box-shadow: 10px 5px 5px #8b1be2;
 }
 
 header {
-    margin-top: 7%;
+  margin-top: 7%;
 }
 
 header img {
-    width: 4cm;
-    height: 4cm;
-    border-radius: 50%;
-    margin-top: 5%;
+  width: 4cm;
+  height: 4cm;
+  border-radius: 50%;
+  margin-top: 5%;
 }
 
 .who-iam {
-    padding-top: 10px;
-    margin-top: 8%;
-    background-color: #8B1BE2;
-    color: #EBE7EE;
+  padding-top: 10px;
+  margin-top: 8%;
+  background-color: #8b1be2;
+  color: #ebe7ee;
 }
 
 .who-iam p {
-    font-size: 1.5rem;
-    line-height: 2;
-    width: 70%;
-    margin-left: 14%;
+  font-size: 1.5rem;
+  line-height: 2;
+  width: 70%;
+  margin-left: 14%;
 }
 
 .sell {
-    position: relative;
-    top: -31px;
-    /* background-color: rgb(174, 67, 67); */
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;  
-    padding-bottom: 20px;
-    padding-top: 120px;
-    cursor: pointer;
+  position: relative;
+  top: -31px;
+  /* background-color: rgb(174, 67, 67); */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 120px;
+  cursor: pointer;
 }
 
 .sell p {
-    font-size: medium;
-    line-height: 2;
-    color: #010;
+  font-size: medium;
+  line-height: 2;
+  color: #010;
 }
 
 .sell svg {
-    color: #1BE266;
-    font-size: 35px;
+  color: #1be266;
+  font-size: 35px;
 }
 
 .sell div {
-    margin-left: 3%;
+  margin-left: 3%;
 }
 
 .sell .sell-title {
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .sell .sell-price {
-    font-size: 24px;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #8B1BE2;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #8b1be2;
 }
 
 .sell .sell-desc {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* width: 90%; */
-    text-align: center;
-    padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* width: 90%; */
+  text-align: center;
+  padding: 10px;
 }
 
 .sell .sell-desc::first-letter {
-    font-size: large;
-    color: #8B1BE2;
-    font-weight: bold;
+  font-size: large;
+  color: #8b1be2;
+  font-weight: bold;
 }
 
 .sell .sell-motiv {
-    color: #8B1BE2;    
-    font-style: italic;
+  color: #8b1be2;
+  font-style: italic;
 }
 .sell button {
-    display: inline-block;
-    width: 70%;
-    height: 30px;
-    border: none;
-    background-color: #8B1BE2;
-    color: #EBE7EE;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
+  display: inline-block;
+  width: 70%;
+  height: 30px;
+  border: none;
+  background-color: #8b1be2;
+  color: #ebe7ee;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .youtube {
-    text-align: center;
-    padding-bottom: 100px;
+  text-align: center;
+  padding-bottom: 100px;
 }
 .youtube img {
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
-    transition: 900ms;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  transition: 900ms;
 }
 .youtube .flex {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 .youtube p {
-    padding: 40px;
+  padding: 40px;
 }
 .youtube img:hover {
-    transition: 900ms;
-    position: relative;
-    width: 200px;
-    height: 200px;
+  transition: 900ms;
+  position: relative;
+  width: 200px;
+  height: 200px;
 }
 .skills {
-    background-color: #8B1BE2;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: #8b1be2;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .skills .char {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
-@keyframes slidein {
+/* @keyframes slidein {
     from {
         translate: 2vw 100;
         scale: -165% -1;
@@ -183,145 +184,136 @@ header img {
       translate: 0 0;
       scale: 100% 1;
     }
-  }
+  } */
 .char1 {
-    animation: 3s infinite alternate slidein;
-    background-color: #F7F9F9;
-    cursor: pointer;
-    position: relative;
+  animation: 3s infinite alternate slidein;
+  background-color: #f7f9f9;
+  cursor: pointer;
+  position: relative;
 }
 .char2 {
-    animation: 1s infinite alternate slidein;
-    display: none;
-    background-color: #2ECC71;
-    cursor: pointer;
-    position: relative;
+  animation: 1s infinite alternate slidein;
+  display: none;
+  background-color: #2ecc71;
+  cursor: pointer;
+  position: relative;
 }
 .char3 {
-    animation: 1s infinite alternate slidein;
-    display: none;
-    background-color: #F4D03F;
-    cursor: pointer;
-    position: relative;
+  animation: 1s infinite alternate slidein;
+  display: none;
+  background-color: #f4d03f;
+  cursor: pointer;
+  position: relative;
 }
 .eye1 {
-    background: black;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    position: relative;
-    left: 34px;
-    top: 44px;
+  background: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  left: 34px;
+  top: 44px;
 }
 .eye1::after {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 10px;
-    content: '';
-    height: 10px;
-    width: 10px;
-    background-color: #EBE7EE;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #ebe7ee;
 }
 .eye2::after {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 10px;
-    content: '';
-    height: 10px;
-    width: 10px;
-    background-color: #EBE7EE;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #ebe7ee;
 }
 .eye2 {
-    background: black;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    position: relative;
-    left: 95px;
-    top: 14px;
+  background: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  left: 95px;
+  top: 14px;
 }
 .mouth {
-    background: black;
-    height: 30px;
-    width: 59%;
-    position: relative;
-    left: 33px;
-    top: 34px;
-    border-radius: 9px;
-    color: #EBE7EE;
-    text-align: center;
-    overflow: hidden;
-    font-size: x-small;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: black;
+  height: 30px;
+  width: 59%;
+  position: relative;
+  left: 33px;
+  top: 34px;
+  border-radius: 9px;
+  color: #ebe7ee;
+  text-align: center;
+  overflow: hidden;
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .welcome-to-the-game {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .arrow svg {
-    width: 390px;
-    height: 50px;
-    color: #1BE266;
-    cursor: pointer;
+  width: 390px;
+  height: 50px;
+  color: #1be266;
+  cursor: pointer;
 }
 .map {
-    display: none;
-    height: 100vb;
-    background-color: #010;
-    color: #F7F9F9;
-    overflow: hidden;
+  display: none;
+  height: 100vb;
+  background-color: #010;
+  color: #f7f9f9;
+  overflow: hidden;
 }
 .map svg {
-    position: relative;
-    top: 10%;
-    left: 90%;
-    height: 30px;
-    width: 30px;
-    opacity: 0.9;
-    cursor: pointer;
+  position: relative;
+  top: 10%;
+  left: 90%;
+  height: 30px;
+  width: 30px;
+  opacity: 0.9;
+  cursor: pointer;
 }
 .map .skills {
-    display: block;
-    width: unset;
-    height: unset;
-    background-color: unset;
+  display: block;
+  width: unset;
+  height: unset;
+  background-color: unset;
 }
 .map .skills .char {
-    animation: 0s infinite alternate slidein;
-    position: relative;    
+  animation: 0s infinite alternate slidein;
+  position: relative;
 }
 .map .skills .char1 {
-    position: relative;
+  position: relative;
 }
 .map .box {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4%;
-}
-.map .box * {
-    height: 90px;
-    width: 90px;
-    background: red;
-    border-radius: 10px;
+  display: block;
 }
 .map .box .basic {
-    background-color: #F4D03F;
+  background-color: #f4d03f;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 80%;
+  border-radius: 10px;
 }
-.map .box .framwork {
-    background-color: #2E86C1;
-}
-.map .box .database {
-    background-color: #1A5276;
-}
-.map .box .back-end {
-    background-color: #7D3C98;
-}
-.map .box .tech {
-    background-color: #28B463;
-}
-.map .box .other-tools {
-    background-color:  #C0392B;
+.map .ball {
+  position: absolute;
+  margin-bottom: 20px;
+  background-color: #8b1be2;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 500ms;
 }
