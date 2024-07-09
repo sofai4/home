@@ -309,6 +309,7 @@ header img {
   border-radius: 10px;
 }
 .map .ball {
+  display: none;
   position: absolute;
   margin-bottom: 20px;
   background-color: #8b1be2;

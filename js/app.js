@@ -200,6 +200,49 @@ char2.onclick = function () {
       console.log(char1IN);
       left++;
       char1IN.style.left = left + "cm";
+    }else if (event.key == ' ') {
+      i++
+      function makeMove() {
+          let ball = document.getElementById('ball1');
+          $(ball).css({
+              left: '90%'
+          })
+          setTimeout(() => {
+              $(ball).css({
+                  display: 'none',
+              })
+          }, 900);
+          setTimeout(() => {
+              $(ball).css({
+                  display: 'block',
+                  left: '0%'
+              }) 
+          }, 1200);
+      }
+      // console.log(i)
+      if(i === 0) {
+          console.log('case', i)
+      }else if (i === 1) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 2) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 3) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 4) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 5) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 6) {
+          console.log('case', i)
+          makeMove()
+      }else {
+          console.log('case is done')
+      }
     }
   });
 };
@@ -251,6 +294,49 @@ char3.onclick = function () {
       console.log(char1IN);
       left++;
       char1IN.style.left = left + "cm";
+    }else if (event.key == ' ') {
+      i++
+      function makeMove() {
+          let ball = document.getElementById('ball1');
+          $(ball).css({
+              left: '90%'
+          })
+          setTimeout(() => {
+              $(ball).css({
+                  display: 'none',
+              })
+          }, 900);
+          setTimeout(() => {
+              $(ball).css({
+                  display: 'block',
+                  left: '0%'
+              }) 
+          }, 1200);
+      }
+      // console.log(i)
+      if(i === 0) {
+          console.log('case', i)
+      }else if (i === 1) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 2) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 3) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 4) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 5) {
+          console.log('case', i)
+          makeMove()
+      }else if (i === 6) {
+          console.log('case', i)
+          makeMove()
+      }else {
+          console.log('case is done')
+      }
     }
   });
 };
