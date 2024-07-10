@@ -297,19 +297,47 @@ header img {
 .map .skills .char1 {
   position: relative;
 }
-.map .box {
+.map .box  {
   display: block;
 }
 .map .box .basic {
   background-color: #f4d03f;
-  height: 90px;
-  width: 90px;
+  height: 190px;
+  width: 190px;
   position: absolute;
   left: 80%;
   border-radius: 10px;
+  margin-bottom: 10%;
+}
+.map .box .front {
+  background-color: #3db049;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  left: 80%;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+.map .box .back {
+  background-color: #9334bc;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  left: 80%;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+.map .box .extra {
+  background-color: #c41849;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  left: 80%;
+  border-radius: 10px;
+  margin-bottom: 10%;
 }
 .map .ball {
-  display: none;
+  display: block;
   position: absolute;
   margin-bottom: 20px;
   background-color: #8b1be2;
@@ -317,4 +345,9 @@ header img {
   height: 60px;
   border-radius: 50%;
   transition: 500ms;
+}
+.map .skills .char3 {
+  position: relative;
+  top: 5%;
+  left: 2%;
 }

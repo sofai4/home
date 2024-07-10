@@ -113,6 +113,8 @@ char1.onclick = function () {
         i++
         function makeMove() {
             let ball = document.getElementById('ball1');
+            let myWay = document.querySelector(".map .skills .char1");
+            ball.style.top = myWay.style.top;
             $(ball).css({
                 left: '90%'
             })
@@ -314,8 +316,11 @@ char3.onclick = function () {
           }, 1200);
       }
       // console.log(i)
+     
       if(i === 0) {
-          console.log('case', i)
+        var myDiv = document.querySelector('.basic')
+          console.log('this is case one', i)
+          makeMove()
       }else if (i === 1) {
           console.log('case', i)
           makeMove()
