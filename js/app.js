@@ -110,49 +110,69 @@ char1.onclick = function () {
         console.log(char1IN.style.top);
         console.log(char1IN.style.left);
       } else if (event.key == " ") {
+        $('.box h6').hide(900)
         i++
-        function makeMove() {
-            let ball = document.getElementById('ball1');
-            let myWay = document.querySelector(".map .skills .char1");
-            ball.style.top = myWay.style.top;
-            $(ball).css({
-                left: '90%'
-            })
-            setTimeout(() => {
-                $(ball).css({
-                    display: 'none',
-                })
-            }, 900);
-            setTimeout(() => {
-                $(ball).css({
-                    display: 'block',
-                    left: '0%'
-                }) 
-            }, 1200);
-        }
+        // function makeMove() {
+        //     let ball = document.getElementById('ball1');
+        //     let myWay = document.querySelector(".map .skills .char1");
+        //     ball.style.top = myWay.style.top;
+        //     ball.style.left = myWay.style.left;
+        //     $(ball).css({
+        //         left: '90%',
+        //         top: '2cm'
+        //     })
+        //     setTimeout(() => {
+        //         $(ball).css({
+        //             display: 'none',
+        //         })
+        //     }, 900);
+        //     setTimeout(() => {
+        //         $(ball).css({
+        //             display: 'block',
+        //             left: '6cm',
+        //         }) 
+        //     }, 1200);
+        // }
         // console.log(i)
         if(i === 0) {
             console.log('case', i)
         }else if (i === 1) {
             console.log('case', i)
-            makeMove()
+            let mydiv = document.querySelector('.basic')
+            // mydiv.style.backgroundColor = 'red'
+            mydiv.innerHTML += `<ul>
+            <li>Vue Js, Bootstrap,</li>
+            <li>Jquery, Json, Ajax</li>
+            <li>DOM, BOM, EC6</li>
+            </ul>`
         }else if (i === 2) {
             console.log('case', i)
-            makeMove()
+            let mydiv = document.querySelector('.basic')
+            mydiv.innerHTML += `<ul>
+            <li>PHP</li>
+            <li>Node Js</li>
+            <li>Sql</li>
+            <li>Laravel</li>
+            </ul>`
+            // mydiv.style.backgroundColor = 'green'
         }else if (i === 3) {
             console.log('case', i)
-            makeMove()
+            let mydiv = document.querySelector('.basic')
+            // mydiv.style.backgroundColor = '#8b1be2'
+            mydiv.innerHTML += `<ul>
+            <li>Sql</li>
+            <li>Mysql</li>
+            <li>MongoDb</li>
+            <li>git</li>
+            <li>wordPress</li>
+            </ul>`
         }else if (i === 4) {
-            console.log('case', i)
-            makeMove()
-        }else if (i === 5) {
-            console.log('case', i)
-            makeMove()
-        }else if (i === 6) {
-            console.log('case', i)
-            makeMove()
-        }else {
-            console.log('case is done')
+          let user = confirm("Do You Want to See My Project !")
+          if(user == true) {
+            location.href = 'index.html#game'
+          }else {
+            l
+          }
         }
       }
     });
@@ -318,12 +338,10 @@ char3.onclick = function () {
       // console.log(i)
      
       if(i === 0) {
-        var myDiv = document.querySelector('.basic')
           console.log('this is case one', i)
           makeMove()
       }else if (i === 1) {
           console.log('case', i)
-          makeMove()
       }else if (i === 2) {
           console.log('case', i)
           makeMove()
