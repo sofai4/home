@@ -4,18 +4,10 @@ let char1 = document.querySelector(".char1"),
   var i = 0;
 // now let make a div when the game gona happened
 
-// first i will make the mouth content changer with jquery
-let mouth1 = document.querySelector(".char1 .mouth");
-let mouth2 = document.querySelector(".char2 .mouth");
-let mouth3 = document.querySelector(".char3 .mouth");
-// here i change the nodeText of mouth
-mouth1.textContent = "I'm Web Developer";
-mouth2.textContent = "I'm Video Editor";
-mouth3.textContent = "I'm Voice Commentator";
-// now we gona do animation to the char;
+// first i will make the mouth content changer with jquery// here i change the nodeText of mouth
 
 let right = document.getElementById("right"),
-  left = document.getElementById("left");
+    left = document.getElementById("left");
 
 const myChars = [".char1", ".char2", ".char3"];
 var count = 0;
@@ -109,32 +101,10 @@ char1.onclick = function () {
         char1IN.style.left = left + "cm";
         console.log(char1IN.style.top);
         console.log(char1IN.style.left);
-      } else if (event.key == " ") {
+      } else if (event.key == "Enter") {
         $('.box h6').hide(900)
         i++
-        // function makeMove() {
-        //     let ball = document.getElementById('ball1');
-        //     let myWay = document.querySelector(".map .skills .char1");
-        //     ball.style.top = myWay.style.top;
-        //     ball.style.left = myWay.style.left;
-        //     $(ball).css({
-        //         left: '90%',
-        //         top: '2cm'
-        //     })
-        //     setTimeout(() => {
-        //         $(ball).css({
-        //             display: 'none',
-        //         })
-        //     }, 900);
-        //     setTimeout(() => {
-        //         $(ball).css({
-        //             display: 'block',
-        //             left: '6cm',
-        //         }) 
-        //     }, 1200);
-        // }
-        // console.log(i)
-        if(i === 0) {
+      if(i === 0) {
             console.log('case', i)
         }else if (i === 1) {
             console.log('case', i)
@@ -151,7 +121,6 @@ char1.onclick = function () {
             mydiv.innerHTML += `<ul>
             <li>PHP</li>
             <li>Node Js</li>
-            <li>Sql</li>
             <li>Laravel</li>
             </ul>`
             // mydiv.style.backgroundColor = 'green'
@@ -180,188 +149,16 @@ char1.onclick = function () {
 
   
 char2.onclick = function () {
-  // alert("Use the A D W S For Moving the charctare")
-  let bd = document.querySelector("#game");
-  let btnBd = document.querySelector("#close");
-  btnBd.onclick = function () {
-    bd.style.display = "none";
-    location.href = "#start";
-  };
-  bd.style.display = "block";
-  bd.style.backgroundColor = "black";
-  bd.style.color = "green";
-  location.href = "#game";
-  // now the user in the game let see where he is clicking
-  let move = 1;
-  let left = 1;
-  addEventListener("keydown", function (event) {
-    console.log(event.key);
-    // now we make the movement of the charctare
-    if (event.key == "s" || event.key == "ArrowDown") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char2");
-      console.log(char1IN);
-
-      move++;
-      char1IN.style.top = move + "cm";
-    } else if (event.key == "w" || event.key == "ArrowUp") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char2");
-      console.log(char1IN);
-      --move;
-      char1IN.style.top = move + "cm";
-    } else if (event.key == "a" || event.key == "ArrowLeft") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char2");
-      console.log(char1IN);
-      --left;
-      char1IN.style.left = left + "cm";
-    } else if (event.key == "d" || event.key == "ArrowRight") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char2");
-      console.log(char1IN);
-      left++;
-      char1IN.style.left = left + "cm";
-    }else if (event.key == ' ') {
-      i++
-      function makeMove() {
-          let ball = document.getElementById('ball1');
-          $(ball).css({
-              left: '90%'
-          })
-          setTimeout(() => {
-              $(ball).css({
-                  display: 'none',
-              })
-          }, 900);
-          setTimeout(() => {
-              $(ball).css({
-                  display: 'block',
-                  left: '0%'
-              }) 
-          }, 1200);
-      }
-      // console.log(i)
-      if(i === 0) {
-          console.log('case', i)
-      }else if (i === 1) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 2) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 3) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 4) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 5) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 6) {
-          console.log('case', i)
-          makeMove()
-      }else {
-          console.log('case is done')
-      }
-    }
-  });
-};
-
+      $('.edtin').show(900)
+      location.href = '#edit'
+}
 //now let work on charctar 2
 
 // charctar 3
 
 char3.onclick = function () {
-  // alert("Use the A D W S For Moving the charctare")
-  let bd = document.querySelector("#game");
-  let btnBd = document.querySelector("#close");
-  btnBd.onclick = function () {
-    bd.style.display = "none";
-    location.href = "#start";
-  };
-  bd.style.display = "block";
-  bd.style.backgroundColor = "black";
-  bd.style.color = "gold";
-  location.href = "#game";
-  // now the user in the game let see where he is clicking
-  let move = 1;
-  let left = 1;
-  addEventListener("keydown", function (event) {
-    console.log(event.key);
-    // now we make the movement of the charctare
-    if (event.key == "s" || event.key == "ArrowDown") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char3");
-      console.log(char1IN);
-
-      move++;
-      char1IN.style.top = move + "cm";
-    } else if (event.key == "w" || event.key == "ArrowUp") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char3");
-      console.log(char1IN);
-      --move;
-      char1IN.style.top = move + "cm";
-    } else if (event.key == "a" || event.key == "ArrowLeft") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char3");
-      console.log(char1IN);
-      --left;
-      char1IN.style.left = left + "cm";
-    } else if (event.key == "d" || event.key == "ArrowRight") {
-      location.href = "#game";
-      let char1IN = document.querySelector(".map .skills .char3");
-      console.log(char1IN);
-      left++;
-      char1IN.style.left = left + "cm";
-    }else if (event.key == ' ') {
-      i++
-      function makeMove() {
-          let ball = document.getElementById('ball1');
-          $(ball).css({
-              left: '90%'
-          })
-          setTimeout(() => {
-              $(ball).css({
-                  display: 'none',
-              })
-          }, 900);
-          setTimeout(() => {
-              $(ball).css({
-                  display: 'block',
-                  left: '0%'
-              }) 
-          }, 1200);
-      }
-      // console.log(i)
-     
-      if(i === 0) {
-          console.log('this is case one', i)
-          makeMove()
-      }else if (i === 1) {
-          console.log('case', i)
-      }else if (i === 2) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 3) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 4) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 5) {
-          console.log('case', i)
-          makeMove()
-      }else if (i === 6) {
-          console.log('case', i)
-          makeMove()
-      }else {
-          console.log('case is done')
-      }
-    }
-  });
+  location.href = '#voice'
+  $('.voic').show(900)
 };
 
 // use the offsite to track the charctare

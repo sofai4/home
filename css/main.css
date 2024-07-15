@@ -50,10 +50,10 @@ header {
 }
 
 header img {
-  width: 4cm;
-  height: 4cm;
-  border-radius: 50%;
-  margin-top: 5%;
+  width: 9cm;
+  height: 9cm;
+  /* border-radius: 10px; */
+  margin-top: 2%;
 }
 
 .who-iam {
@@ -187,7 +187,7 @@ header img {
   } */
 .char1 {
   animation: 3s infinite alternate slidein;
-  background-color: #2fd0e2;
+  background-color: #C0C0C0;
   cursor: pointer;
   position: relative;
 }
@@ -667,4 +667,29 @@ header img {
 }
 .box h6 svg {
   margin-left: 40px;
+}
+
+.editin, .voic {
+  display: none;
+  height: 100vb;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #8a2bbd;
+  color: #f7f9f9;
+  margin-top: 7%;
+}
+
+.editin video{
+  height: 500px;
+  border-radius: 10px;
+}
+
+.editin p {
+  font-size: 2em;
+}
+
+.voic audio {
+    width: 20cm;
 }
