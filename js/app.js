@@ -147,18 +147,30 @@ char1.onclick = function () {
     });
   };
 
-  
+let x = document.querySelector('#edit .x'),
+    y  = document.querySelector('#voice .x')
+x.onclick = function() {
+    $(x).parent().hide(900) 
+}
+
+y.onclick = function() {
+  $(y).parent().hide(900) 
+}
+
 char2.onclick = function () {
-      $('.edtin').show(900)
-      location.href = '#edit'
+      $('.editin').show(function(){
+        location.href = '#edit'
+      }).css({display: "flex"})
+     
 }
 //now let work on charctar 2
 
 // charctar 3
 
 char3.onclick = function () {
-  location.href = '#voice'
-  $('.voic').show(900)
+  $('.voic').show(function(){
+    location.href = '#voice'
+  }).css({display: "flex"})
 };
 
 // use the offsite to track the charctare

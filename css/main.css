@@ -693,3 +693,48 @@ header img {
 .voic audio {
     width: 20cm;
 }
+
+
+footer {
+  background: #8a2bbd;
+  margin-top: 7%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* color: white; */
+  flex-direction: column;
+  text-align: center;
+  color: #f7f9f9;
+}
+
+footer img {
+  width: 290px;
+  height: 290px;
+  margin: auto;
+}
+
+footer p {
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: bold;
+}
+footer .links {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+footer svg {
+  font-size: 1cm;
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg img {
+  width: 250px;
+  height: 250px;
+  margin-top: 4%;
+}

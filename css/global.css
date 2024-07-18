@@ -27,3 +27,19 @@ a {
 #ball2 {
     display: none;
 }
+.x {
+  position: fixed;
+  height: 2cm;
+  width: 2cm;
+  background-color: inherit;
+  top: 16px;
+  left: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x svg {
+  font-size: x-large;
+  cursor: pointer;
+}
