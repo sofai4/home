@@ -63,3 +63,9 @@ input[type="email"] {
     left: 40%;
     opacity: 1;
 }
+.premium {
+    background-color: #2a3c4e;
+}
+.max {
+    background-color: #405e7c;
+}
