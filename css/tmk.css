@@ -1,0 +1,59 @@
+body {
+    background-color: #151414;
+    color: rgb(248, 241, 241);
+}
+
+.tmk {
+    height: 100vb;
+    margin-top: 3%;
+}
+
+.header {
+    border-radius: 10px;
+    background-image: url('../resours/images/harry2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    filter: blur();
+    padding: 30px;
+}
+
+.header ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+}
+
+.green {
+    color: rgb(88, 196, 88);
+}
+
+.border {
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.header p {
+    font-weight: bold;
+    width: 40%;
+    line-height: 2;
+    margin-left: 4%;
+}
+
+button {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    margin-left: 10%;
+    border: none;
+    background-color: rgb(88, 196, 88);
+    color: #ebe7ee;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
