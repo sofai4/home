@@ -57,3 +57,25 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+
+.slide {
+    background-color: black;
+    height: 100vb;
+    width: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+}
+
+.slide svg {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+.slide svg:hover {
+    color: rgb(88, 196, 88);
+}
