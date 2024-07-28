@@ -4,7 +4,7 @@
     }
 
     .tmk {
-        height: 100vb;
+        height: fit-content;
         margin-top: 3%;
     }
 
@@ -81,10 +81,14 @@
     }
 
     .recommend {
+        height: 400px;
         margin-left: 140px;
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: calc(95% / 2);
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        overflow: scroll;
     }
 
     .left-me {
@@ -99,6 +103,6 @@
         font-weight: bold;
         padding-left: 3px;
         color: white;
-      
+        margin-bottom: 20px;
         /* flex-wrap: wrap; */
     }
