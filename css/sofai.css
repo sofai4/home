@@ -28,6 +28,10 @@ body {
     margin: auto;
 }
 
+.who ul {
+    display: none;
+}
+
 .who {
     margin-bottom: 3%;
 }
@@ -74,7 +78,8 @@ body {
 .download img {
     width: 5cm;
     height: 5cm;
-    margin: 50px 0 50px 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .sofai video {
