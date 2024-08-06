@@ -17,15 +17,19 @@
         width: 60%;
         margin: auto;
         /* filter: blur(); */
-        padding: 30px;
+            padding: 30px;
     }
 
     .header ul {
-        width: 50%;
+        /* width: 50%; */
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         list-style: none;
         font-weight: bold;
+    }
+
+    .header ul li {
+        margin-left: 40px;
     }
 
     .green {

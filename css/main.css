@@ -20,7 +20,7 @@ nav img {
 nav ul {
   list-style: none;
   display: flex;
-  margin-top: 9%;
+  /* margin-top: 9%; */
 }
 
 nav ul a {
@@ -158,8 +158,7 @@ header img {
 .youtube img:hover {
   transition: 900ms;
   position: relative;
-  width: 200px;
-  height: 200px;
+  border: 6px blueviolet solid;
 }
 .skills {
   background-color: #8b1be2;

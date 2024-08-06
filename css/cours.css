@@ -1,0 +1,26 @@
+.cours {
+    height: fit-content;
+    margin: 60px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+h1 {
+    padding: 30px;
+    color: blueviolet;
+}
+.cours * {
+    margin-bottom: 40px;
+    background-color: #e4e3e3;
+    color: blueviolet;
+    font-weight: bold;
+    height: 8cm;
+    width: 8cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}

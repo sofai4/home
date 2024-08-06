@@ -1,6 +1,7 @@
 .body {
    background-color: #e3e6e6;
-   height: 100vb;
+   height: fit-content;
+   padding-bottom: 40px;
 }
 
 header ul {
@@ -20,7 +21,7 @@ header ul li {
 .card {
     background-color: white;
     width: 300px;
-    height: 300px;
+    height: fit-content;
     margin-left: 30px;
     margin-top: 40px;
     display: flex;
@@ -31,6 +32,7 @@ header ul li {
     text-transform: capitalize;
     border-radius: 10px;
     align-items: center;
+    padding: 20px;
 }
 .card h3 {
     font-size: 1.5em;
@@ -48,3 +50,60 @@ header ul li {
     justify-content: center;
 }
 
+.videos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videos button {
+   display: block;
+}
+
+.container .card-download {
+    background-color: rgb(222, 95, 95);
+    color: rgb(246, 246, 246);
+    width: fit-content;
+    padding: 16px;
+    text-align: center;
+    height: 286px;
+    border-radius: 11px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.container ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.container ul li {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+button {
+    display: block;
+    background-color: indianred;
+    color: white;
+    width: fit-content;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.container  button {
+    position: relative;
+    left: 2.5cm;
+}
