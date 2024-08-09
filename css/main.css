@@ -801,7 +801,17 @@ footer svg {
     footer svg {
       font-size: large;
     }
-
+    .box ul{
+      flex-direction: column;
+    }
+    .box li {
+      font-size: medium;
+    }
+    .box h6 {
+      position: relative;
+      top: 80px;
+      left: 0;
+    }
 }
 
 @media (min-width: 900px) and (max-width: 1300px) {
@@ -814,6 +824,10 @@ footer svg {
   }
   .youtube .flex i {
     display: none;
+}
+
+.box li {
+  font-size: medium;
 }
 
 
