@@ -812,6 +812,12 @@ footer svg {
       top: 80px;
       left: 0;
     }
+    .editing video, .voic audio{
+      width: 80%;
+    }   
+    .editin p {
+      font-size: medium;
+    } 
 }
 
 @media (min-width: 900px) and (max-width: 1300px) {
@@ -829,6 +835,10 @@ footer svg {
 .box li {
   font-size: medium;
 }
-
-
+.editing video, .voic audio {
+  width: 80%;
+}    
+.editing .h2 {
+  font-size: medium;
+}
 }
