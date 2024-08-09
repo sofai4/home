@@ -9,7 +9,7 @@ gtag('config', 'G-0P29BVB28D');
 let navX = document.querySelector('nav .nav-x');
 
 let int = setInterval(() => {
-    console.log($(document).width())
+    // console.log($(document).width())
     if($('nav').width() < 1235 ) {
         $('nav ul').hide()
         $('.nav-x').show()
@@ -32,3 +32,5 @@ navX.onclick = function() {
         clearInterval(int)
     }, 80);
 }
+
+

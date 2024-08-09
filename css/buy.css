@@ -69,3 +69,22 @@ input[type="email"] {
 .max {
     background-color: #405e7c;
 }
+
+/* respone form  */
+@media (min-width: 300px) and (max-width: 900px) { 
+    .pack {
+        transform: translate(5%);
+    }
+    .b {
+        width: 90%;
+        height: fit-content;
+    }
+    
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+
+    
+
+}
+
