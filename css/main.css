@@ -9,13 +9,25 @@ nav {
   justify-content: space-around;
   margin-top: 4%;
 }
-
+nav .nav-x {
+  display: none;
+  font-size: 4em;
+  cursor: pointer;
+  z-index: 999;
+}
 nav img {
   width: 2cm;
   height: 2cm;
   border-radius: 17px;
   transition: 900ms;
 }
+
+nav .fa-bars {
+  position: relative;
+  top: 20px;
+  font-size: 2em;
+  color: #1be266;
+} 
 
 nav ul {
   list-style: none;
@@ -736,4 +748,73 @@ footer svg {
   width: 250px;
   height: 250px;
   margin-top: 4%;
+}
+
+/* work on respond form */
+
+@media (min-width: 300px) and (max-width: 900px) {
+    header img , img  {
+      width: 250px;
+      height: 300px;
+    }
+    .welcom  p{
+      font-size: medium;
+      line-height: 2.5;
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+    }
+    .msg h1, .youtube .title  {
+      font-size: 1.3em;
+      padding: 10px;
+      letter-spacing: 2px;
+      line-height: 2;
+    }
+    .msg p {
+      padding: 20px;
+      line-height: 2;
+    }
+    .sell, .youtube .flex {
+        flex-direction: column;
+    }
+    .sell div , .youtube .flex img {
+      margin-top: 40px;
+    }
+
+    .youtube .flex i {
+      display: none;
+    }
+
+    .welcome-to-the-game p {
+      font-size: large;
+      line-height: 2;
+      padding: 10px;
+    }
+    .arrow p {
+      font-size: medium; 
+      width: 100%;
+    }
+    footer .h2 {
+      line-height: 2;
+      font-size: medium
+    }
+    footer svg {
+      font-size: large;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+
+  .sell, .youtube .flex {
+    flex-direction: column;
+}
+  .sell div , .youtube .flex img {
+    margin-top: 40px;
+  }
+  .youtube .flex i {
+    display: none;
+}
+
+
 }
