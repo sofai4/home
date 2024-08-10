@@ -3,7 +3,10 @@
    height: fit-content;
    padding-bottom: 40px;
 }
-
+img {
+    width: 240px;
+    height: 240px;
+}
 header ul {
     display: flex;
     list-style: none;
@@ -62,12 +65,11 @@ header ul li {
 }
 
 .container .card-download {
-    background-color: rgb(222, 95, 95);
-    color: rgb(246, 246, 246);
     width: fit-content;
     padding: 16px;
     text-align: center;
-    height: 286px;
+    height: fit-content;
+    padding: 5px;
     border-radius: 11px;
 }
 
@@ -106,4 +108,38 @@ button {
 .container  button {
     position: relative;
     left: 2.5cm;
+}
+
+
+/* responde form */
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .container  {
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+    .container div {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: medium;
+        font-weight: unset;
+    }
+    .container .card-download ul li {
+        font-size: medium;
+        font-weight: unset; 
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1300px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    .thanks {
+        font-size: medium;
+    }
+    .card-download  .info ul li {
+        font-size: medium;
+        font-weight: unset;
+    }
 }

@@ -26,8 +26,7 @@
 .opt {
     display: flex;
     margin-top: 40px;
-    position: relative;
-    left: 15%;
+    transform: translate(13%);
 }
 button {
     width: 200px;
@@ -38,4 +37,45 @@ button {
     padding: 10px;
     border: none;
     margin-left: 30px;
+}
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .all  {
+       flex-direction: column;
+    }
+    .all video {
+        width: 80%;
+        transform: translate(5%);
+        margin-left: 0;
+    }
+    .next {
+        margin-top: 120px;
+        width: 100%;
+        height: fit-content;
+        overflow: unset;
+    }
+
+    .next::before {
+        content: 'Next';
+        text-align: left;
+        font-size: x-large;
+        margin-bottom: 30px;
+        color: blueviolet;
+    }
+    .opt {
+        transform: translate(1%);
+    }
+    button {
+        display: none;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 1300px) {
+    .all video {
+        width: 400px;
+        height: 400px;
+        margin-left: 0;
+    }
 }

@@ -20,6 +20,7 @@ nav img {
   height: 2cm;
   border-radius: 17px;
   transition: 900ms;
+  cursor: pointer;
 }
 
 nav .fa-bars {

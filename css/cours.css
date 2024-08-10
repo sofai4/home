@@ -10,7 +10,7 @@ h1 {
     padding: 30px;
     color: blueviolet;
 }
-.cours * {
+.cours div {
     margin-bottom: 40px;
     background-color: #e4e3e3;
     color: blueviolet;

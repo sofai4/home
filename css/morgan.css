@@ -82,3 +82,20 @@ body {
     height: 300px;
     margin-bottom: 3%;
 }
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .sofai , .download{
+       flex-direction: column;
+    }
+    .who ul{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        rotate: 0deg;
+        overflow: hidden;
+    }   
+}
+
+
+
