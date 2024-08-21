@@ -51,7 +51,7 @@ body {
   display: none;
   position: fixed;
   left: 20%;
-  top: 25%;
+  top: 5%;
   width: 30%;
   background-color: rgb(220, 220, 43);
   color: white;
@@ -68,7 +68,7 @@ body {
   display: none;
   position: fixed;
   left: 20%;
-  top: 30%;
+  top: 5%;
   width: 30%;
   background-color: rgb(220, 220, 43);
   color: white;
