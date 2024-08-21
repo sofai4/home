@@ -1,4 +1,24 @@
-
+//console.log("i'm working");
+		// //console.log("i'm the global file")
+        let clear = document.querySelector('#clear')
+        if(location.pathname == '/home/thanks.html') {
+          if(localStorage.getItem('name') === null) {
+              location.href = 'error.html'
+          }else {
+              clear.onclick = function() {
+                  window.localStorage.clear()
+                  location.href = 'index.html'
+               }
+              //console.log(localStorage.getItem('name'))
+              let msg = document.querySelector('p')
+              msg.innerHTML = `Thank You 
+             <div class='red-1em'> ${localStorage.getItem('name')}</div> For your order 
+               ${localStorage.getItem('page')}   <div class='red-1em'> 
+                ${localStorage.getItem('order')}</div> and if you
+                have any questions or issues <a href='https://x.com'>@4hForHelp</a>
+                <br> stay green &#128732 we gona contact you.`
+          }
+        }
 
 
 window.dataLayer = window.dataLayer || [];
@@ -263,7 +283,7 @@ if(location.search == '?page=over') {
     <hr> work with you on book or game etc `
 }
 
-if(location.pathname == '/buy.html') {
+if(location.pathname == '/home/buy.html') {
     let mylinks = ['?page=over' , '?page=web', '?page=adver', '?page=adob']
 
     for(let i= 0; i < mylinks.length; i++) {
