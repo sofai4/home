@@ -1,4 +1,26 @@
-console.log("i'm the global file")
+// //console.log("i'm the global file")
+let clear = document.querySelector('#clear')
+
+if(location.pathname == '/thanks.html') {
+    if(localStorage.getItem('name') === null) {
+        location.href = 'error.html'
+    }else {
+        clear.onclick = function() {
+            window.localStorage.clear()
+            location.href = 'index.html'
+         }
+        //console.log(localStorage.getItem('name'))
+        let msg = document.querySelector('p')
+        msg.innerHTML = `Thank You 
+       <div class='red-1em'> ${localStorage.getItem('name')}</div> For your order 
+         ${localStorage.getItem('page')}   <div class='red-1em'> 
+          ${localStorage.getItem('order')}</div> and if you
+          have any questions or issues <a href='https://x.com'>@4hForHelp</a>
+          <br> stay green &#128732 we gona contact you.`
+    }
+}
+
+
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -9,7 +31,7 @@ gtag('config', 'G-0P29BVB28D');
 let navX = document.querySelector('nav .nav-x');
 
 let int = setInterval(() => {
-    // console.log($(document).width())
+    // //console.log($(document).width())
     if($('nav').width() < 1235 ) {
         $('nav ul').hide()
         $('.nav-x').show()
@@ -34,3 +56,272 @@ navX.onclick = function() {
 }
 
 
+// test the routing 
+
+function getOption(number) {
+    order = btn[number].parentElement.parentElement.firstElementChild.textContent
+    type =  document.querySelector('h1').textContent
+    $('.confirm').show(400, function() {
+        document.querySelector('.pack').style.opacity = '0'
+    })
+    $('.admin').text(type)
+    $('.alert').text("do you want see demo for [ " + order + " ]")
+    let tog = document.querySelector('.btn1')
+    let tog1 = document.querySelector('.btn2')
+    tog1.onclick = function() {
+        $('.confirm').hide(400,function() {
+            document.querySelector('.pack').style.opacity = '1'
+        })
+    }
+    let i = 0;
+    tog.onclick = function() {
+        // location.href = `https://4h.kesug.com?order=${order}&type=${type}`
+        //console.log(i)
+        if(type == ' Web') {
+            i++
+            $('.alert').html(` You Can Vist This <a style='color: blue' 
+            href='https://myproject.com/morgan4h' target='__blank'
+            >MyProjects</a>  <hr> To See Your Order how its look like <hr>
+            now if you are Comfortable you can confirm your order &#128512;
+            `)
+        }else if(type == ' Video Editing') {
+            i++
+            if(order == 'Basic  10$') {
+                $('.alert').html(`<video controls src=""></video>`)
+            }
+            else if(order == 'premium  50$ - 100$') {
+                $('.alert').html(`<video controls src=""></video>`)
+            }else if(order == ' Max +100$') {
+                $('.alert').html(`<video controls src=""></video>`)
+            }
+            
+        }else if(type == ' Advertasing') {
+            i++
+                if(order ==' SOFAI 4H 10$') {
+                    $('.alert').html(`You Can Vist The channel <a
+                     style='color: blue' href=
+                    'https://youtube.com/@SOFAI4H'>SOFAI 4H</a>`)
+                }else if(order == ' Morgan 4H 5$') {
+                    $('.alert').html(`You Can Vist The channel <a
+                     style='color: blue' href=
+                    'https://youtube.com/@morgan4h'>MORGAN 4H</a>`)
+                }else if(order == 'Sponsor') {
+                    $('.alert').html(`You Can Watch The Video <a
+                    style='color: blue' href=
+                   'https://youtube.com/videos'>Watch More</a>`)
+                }
+        }else if (type == ' Voice Over') {
+            i++
+                if(order == 'Basic  10$') {
+                    $('.alert').html(` <audio src="" controls></audio>
+                    <audio src="" controls></audio>`)
+                }else if(order == 'premium  50$') {
+                    $('.alert').html(` <audio src="" controls></audio>
+                    <hr>
+                    <audio src="" controls></audio>`)
+                }else if(order == ' Max +100$') {
+                    $('.alert').html(`You Can Watch The Video <a
+                    style='color: blue' href=
+                   'https://youtube.com/videos'>Watch More</a>`)
+                }
+        }
+
+        if(i === 2) {
+            //console.log(order)
+           let newOrder =  localStorage.setItem('order',order);
+           let newType =  localStorage.setItem('page',type);
+            // let inp = document.getElementsByTagName('input')
+            $('.sendInfo').show(400,function() {
+                $('.confirm').hide(400)
+            })
+            
+            //  location.href = `https://4h.kesug.com/routing.php?order=${order}&type=${type}`
+        }else if(i > 2) {
+            i = 0
+        }
+        
+    }
+}
+
+
+// //console.log(location.search)
+let btn = document.getElementsByTagName('button')
+btn[0].onclick = function() {
+   getOption(0)
+}
+btn[1].onclick = function() {
+   getOption(1)
+}
+btn[2].onclick = function() {
+    getOption(2)
+}
+
+
+if(location.search == '?page=web') {
+    let head = document.querySelector('h1'),
+        title = document.querySelectorAll('.p'),
+        p = document.querySelectorAll('p')
+    head.textContent = " Web"
+    title[0].textContent += ' 10$'
+    title[1].textContent += ' 50$ - 150$'
+    title[2].textContent = ' Max +1000$'
+    p[0].innerHTML = `build simple website with 
+    html css and basic javascript <hr>
+    build pages for your project  [Login
+         page, home page,   ]
+   <hr>build webSite for your business with links to your social media`
+    p[1].innerHTML = `build Daynamic webapp with html css  and javasacript
+     [front end]and PHP MYsql [back-end] <hr>
+    Can Make your static website  more daynamic with php and mysql 
+    <hr> Can Make a wordpress them or website or add back-end service to your wordpress`
+    p[2].innerHTML = `this Mean you have some 
+    larg project and you want me 
+    <hr> work with libraries like react vuejs laraval etc `
+}
+
+if(location.search == '?page=adob') {
+    let head = document.querySelector('h1'),
+        title = document.querySelectorAll('.p'),
+        p = document.querySelectorAll('p')
+    head.textContent = " Video Editing"
+    title[0].textContent += ' 10$'
+    title[1].textContent += ' 50$ - 100$'
+    title[2].textContent = ' Max +100$'
+    p[0].textContent = `5 - 20 Min simple video edit [cut,background music,fix audio,edit color]`
+    p[1].textContent = `40Min  editing with effect 
+     and sound effect etc`
+    p[2].innerHTML = `this Mean you have some 
+    larg project and you want me 
+    <hr> work for serial or long video + 40 Min `
+}
+
+
+
+if(location.search == '?page=adver') {
+    let head = document.querySelector('h1'),
+        title = document.querySelectorAll('.p'),
+        p = document.querySelectorAll('p')
+    head.textContent = " Advertasing"
+    title[0].textContent = ' SOFAI 4H 10$'
+    title[1].textContent = ' Morgan 4H 5$'
+    title[2].textContent = 'Sponsor'
+    p[0].textContent = `Hacking And It channel with more then 5K Sub And more 20K View in Months`
+    p[1].textContent = `Programming channel Education Motivation Content`
+    p[2].textContent = `this Mean you want support  
+    the project for more then one video`
+    let newOne = document.createElement('div')
+        titleText = document.createElement('h3')
+        titleText.textContent ='TMK 4H 5$'
+        pargTxt = document.createElement('p')
+        pargTxt.textContent = `Gaming Channel , Fany Content`
+        button = document.createElement('button')
+        button.textContent = 'Select'
+        con = document.querySelector('.pack')
+        newOne.appendChild(titleText)
+        newOne.appendChild(pargTxt)
+        newOne.appendChild(button)
+        con.appendChild(newOne)
+        newOne.className = 'b'
+        titleText.className = 'p'
+        button.onclick = function() {
+            let order = titleText.textContent
+            let type = document.querySelector('h1').textContent
+            $('.confirm').show(400, function() {
+                document.querySelector('.pack').style.opacity = '0'
+            })
+            $('.admin').text(type)
+            $('.alert').text("do you want see demo for [ " + order + " ]")
+            let tog = document.querySelector('.btn1')
+            let tog1 = document.querySelector('.btn2')
+            tog1.onclick = function() {
+                $('.confirm').hide(400,function() {
+                    document.querySelector('.pack').style.opacity = '1'
+                })
+            }
+            l = 0
+            tog.onclick = function() {
+                if(type == ' Advertasing') {
+                    l++
+                        if(order =='TMK 4H 5$') {
+                            $('.alert').html(`You Can Vist The channel <a
+                             style='color: blue' href=
+                            'https://youtube.com/@tmk4h'>TMK 4H</a>`)
+                        }
+                         }
+                         if(l > 1 ) {
+                            
+                            let newOrder =  localStorage.setItem('order',order);
+                            let newType =  localStorage.setItem('page',type);
+                                // let inp = document.getElementsByTagName('input')
+                                $('.sendInfo').show(400,function() {
+                                    $('.confirm').hide(400)
+                                })
+                                
+                         }
+            }
+            
+        }
+        newOne.style.marginTop = '55px'
+        newOne.style.marginLeft = '-30px'
+        newOne.style.rotate = '3deg'
+        
+}
+
+
+
+if(location.search == '?page=over') {
+    let head = document.querySelector('h1'),
+        title = document.querySelectorAll('.p'),
+        p = document.querySelectorAll('p')
+    head.textContent = " Voice Over"
+    title[0].textContent += ' 10$'
+    title[1].textContent += ' 50$'
+    title[2].textContent = ' Max +100$'
+    p[0].textContent = `5 - 30 Min simple audio [English-Arabic]`
+    p[1].textContent = `Motivation or advertisement audio with feeling`
+    p[2].innerHTML = `this Mean you have some 
+    larg project and you want me 
+    <hr> work with you on book or game etc `
+}
+
+if(location.pathname == '/buy.html') {
+    let mylinks = ['?page=over' , '?page=web', '?page=adver', '?page=adob']
+
+    for(let i= 0; i < mylinks.length; i++) {
+        if(mylinks.includes(location.search)) {
+            // //console.log('good link')
+            
+        }else {
+            location.href = 'error.html'
+        }
+    }
+}
+
+
+
+// send data to the server 
+
+$('#send').on('click',function() {
+    let inp = document.querySelectorAll('input')
+    if(inp[0].value === '' || inp[1].value === '' || inp[2].value === '' ){
+        $('.error').show(200,function() {
+            $('.error').fadeToggle(1000)
+        })
+    }else {
+      
+        $.getJSON("https://api.ipify.org?format=json",
+        function (data) {
+            
+            localStorage.setItem('userIp',data.ip)
+        })
+        let Fpage = localStorage.getItem('page')
+        let fOrder = localStorage.getItem('order')
+        let name = inp[0].value
+        let thanks = localStorage.setItem('name',name);
+        let email = inp[1].value
+        let msg = inp[2].value
+        let timeSend = new Date()
+        let user = localStorage.getItem('userIp')
+        location.href = `https://4h.kesug.com/routing.php?page=${Fpage}&order=${fOrder}&name=${name}&email=${email}&msg=${msg}&time=${timeSend}&user=${user}`
+      }
+})

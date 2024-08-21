@@ -46,14 +46,14 @@ left.onclick = function () {
 right.onclick = function () {
   count--;
   move();
-  console.log(count);
+  //console.log(count);
 };
 
 // make function for the charctare
 
 char1.onclick = function () {
     // alert("Use the A D W S For Moving the charctare")
-    console.log("hi");
+    //console.log("hi");
     let bd = document.querySelector("#game");
     let btnBd = document.querySelector("#close");
     btnBd.onclick = function () {
@@ -68,46 +68,46 @@ char1.onclick = function () {
     let move = 1;
     let left = 1;
     addEventListener("keydown", function (event) {
-      console.log(event.key);
+      //console.log(event.key);
       // now we make the movement of the charctare
       if (event.key == "s" || event.key == "ArrowDown") {
         location.href = "#game";
         let char1IN = document.querySelector(".map .skills .char1");
         move++;
         char1IN.style.top = move + "cm";
-        console.log(char1IN.style.top);
-        console.log(char1IN.style.left);
+        //console.log(char1IN.style.top);
+        //console.log(char1IN.style.left);
       } else if (event.key == "w") {
         location.href = "#game";
         let char1IN = document.querySelector(".map .skills .char1");
-        console.log(char1IN);
+        //console.log(char1IN);
         --move;
         char1IN.style.top = move + "cm";
-        console.log(char1IN.style.top);
-        console.log(char1IN.style.left);
+        //console.log(char1IN.style.top);
+        //console.log(char1IN.style.left);
       } else if (event.key == "a" || event.key == "ArrowLeft") {
         location.href = "#game";
         let char1IN = document.querySelector(".map .skills .char1");
-        console.log(char1IN);
+        //console.log(char1IN);
         --left;
         char1IN.style.left = left + "cm";
-        console.log(char1IN.style.top);
-        console.log(char1IN.style.left);
+        //console.log(char1IN.style.top);
+        //console.log(char1IN.style.left);
       } else if (event.key == "d" || event.key == "ArrowRight") {
         location.href = "#game";
         let char1IN = document.querySelector(".map .skills .char1");
-        console.log(char1IN);
+        //console.log(char1IN);
         left++;
         char1IN.style.left = left + "cm";
-        console.log(char1IN.style.top);
-        console.log(char1IN.style.left);
+        //console.log(char1IN.style.top);
+        //console.log(char1IN.style.left);
       } else if (event.key == "Enter") {
         $('.box h6').hide(900)
         i++
       if(i === 0) {
-            console.log('case', i)
+            //console.log('case', i)
         }else if (i === 1) {
-            console.log('case', i)
+            //console.log('case', i)
             let mydiv = document.querySelector('.basic')
             // mydiv.style.backgroundColor = 'red'
             mydiv.innerHTML += `<ul>
@@ -116,7 +116,7 @@ char1.onclick = function () {
             <li>DOM, BOM, EC6</li>
             </ul>`
         }else if (i === 2) {
-            console.log('case', i)
+            //console.log('case', i)
             let mydiv = document.querySelector('.basic')
             mydiv.innerHTML += `<ul>
             <li>PHP</li>
@@ -125,7 +125,7 @@ char1.onclick = function () {
             </ul>`
             // mydiv.style.backgroundColor = 'green'
         }else if (i === 3) {
-            console.log('case', i)
+            //console.log('case', i)
             let mydiv = document.querySelector('.basic')
             // mydiv.style.backgroundColor = '#8b1be2'
             mydiv.innerHTML += `<ul>
@@ -173,4 +173,7 @@ char3.onclick = function () {
   }).css({display: "flex"})
 };
 
-// use the offsite to track the charctare
+// working on the content of the page 
+
+
+
