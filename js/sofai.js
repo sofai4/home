@@ -20,8 +20,9 @@ if(location.href == 'https://sofai4.github.io/home/sofai4h/blog.html?morgan') {
     }
     
     //usage:
-    readTextFile("../sofai4h/content.json", function(text){
+    readTextFile("https://4h.kesug.com/data.json", function(text){
         var data = JSON.parse(text);
+        console.log(data)
         console.log(data[0].title);
         console.log(data[0].p1);
         console.log(data[0].p2);
@@ -35,7 +36,8 @@ if(location.pathname == '/home/sofai4h/blog.html') {
 
     }else if(location.search == '?morgan') {
 
-    }else {
+    }
+    else {
         location.href = 'https://sofai4.github.io/home/error.html'
     }
 }
