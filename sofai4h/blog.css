@@ -7,9 +7,10 @@ h1 {
     text-align: center;
 }
 
-video {
-    height: 400px;
+iframe {
+    height: 500px;
     margin: auto;
+    width: 60%;
 }
 
 p {
@@ -20,7 +21,7 @@ p {
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
-    video {
+    iframe {
         width: 90%;
     }
     p {

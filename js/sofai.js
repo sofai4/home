@@ -1,18 +1,37 @@
 // simple animate with jquery
 $('.who ul').slideToggle(900)
 // make statmaent for location
-if(location.href == 'https://sofai4.github.io/home/sofai4h/blog.html?morgan') {
-    //if news for sofai 4h
-    console.log('welcome ' + location.search)
-    // location.href = `https://4h.kesug.com/content.php?content='true'`
-}else if(location.href == 'https://sofai4.github.io/home/sofai4h/blog.html?sofai' ) {
-    // console.log('welcome ' + location.search)
-   window.open('https://4h.kesug.com/content.php?get=co','_blank')
+
+if(localStorage.getItem('stay') == null) {
+    console.log('no')
+    location.href = 'https://4h.kesug.com/blog.php?title=co';
+    localStorage.setItem('stay','true')
 }else {
     let t = document.querySelector('h1')
     let p = document.querySelectorAll('p')
-    let video  = document.querySelector('iframe').getAttribute('src')
-    console.log(t)
-    console.log(p)
-    console.log(video)
+    let video  = document.querySelector('iframe')
+    let params = new URL(document.location.toString()).searchParams;
+    let t1 = params.get("t");
+    let p1 = params.get("p1");
+    let p2 = params.get("p2");
+    let p3 = params.get("p3");
+    let video1 = params.get("video");
+    if(t1 == null) {
+         location.href = 'https://4h.kesug.com/blog.php?title=co';
+    }
+    t.textContent = t1
+    p[0].innerHTML = p1
+    p[1].innerHTML = p2
+    p[2].innerHTML = p3
+    video.setAttribute('src',video1)
+    localStorage.setItem('t',t1)
+    localStorage.setItem('p1',p1)
+    localStorage.setItem('p2',p2)
+    localStorage.setItem('p3',p3)
+    localStorage.setItem('video',video1)
+
+
 }
+
+
+
