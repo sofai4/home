@@ -26,6 +26,7 @@ if(location.href == 'https://sofai4.github.io/home/sofai4h/blog.html?morgan') {
         console.log(data[0].p1);
         console.log(data[0].p2);
         console.log(data[0].p3);
+        console.log(data[0].video);
     });
 }
 // check the user who want the content 
