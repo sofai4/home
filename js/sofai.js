@@ -27,9 +27,12 @@ if(localStorage.getItem('stay') == null) {
     p[0].textContent = p1
     p[1].textContent = p2
     p[2].textContent = p3
-    links[0] = link1
-    links[1] = link2
-    links[2] = link3
+    links[0].setAttribute('href',link1)
+    links[1].setAttribute('href',link2)
+    links[2].setAttribute('href',link3)
+    links[0].textContent = link1
+    links[1].textContent = link2
+    links[2].textContent = link3
     video.setAttribute('src',video1)
     localStorage.setItem('t',t1)
     localStorage.setItem('p1',p1)
@@ -37,8 +40,8 @@ if(localStorage.getItem('stay') == null) {
     localStorage.setItem('p3',p3)
     localStorage.setItem('video',video1)
     localStorage.setItem('link1',link1)
-    localStorage.setItem('video',link2)
-    localStorage.setItem('video',link3)
+    localStorage.setItem('link2',link2)
+    localStorage.setItem('link3',link3)
 }
 
 
