@@ -20,9 +20,9 @@ if(localStorage.getItem('stay') == null) {
          location.href = 'https://4h.kesug.com/blog.php?title=co';
     }
     t.textContent = t1
-    p[0].innerHTML = p1
-    p[1].innerHTML = p2
-    p[2].innerHTML = p3
+    p[0].textContent = p1
+    p[1].textContent = p2
+    p[2].textContent = p3
     video.setAttribute('src',video1)
     localStorage.setItem('t',t1)
     localStorage.setItem('p1',p1)
