@@ -151,3 +151,13 @@ body {
   color: #FF5733;
   font-size: 1em;
 }
+
+.links-space {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links-space a {
+  display: block;
+}
