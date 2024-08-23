@@ -30,9 +30,9 @@ if(localStorage.getItem('stay') == null) {
     links[0].setAttribute('href',link1)
     links[1].setAttribute('href',link2)
     links[2].setAttribute('href',link3)
-    links[0].textContent = link1
-    links[1].textContent = link2
-    links[2].textContent = link3
+    links[0].textContent = 'link1'
+    links[1].textContent = 'link2'
+    links[2].textContent = 'link3'
     video.setAttribute('src',video1)
     localStorage.setItem('t',t1)
     localStorage.setItem('p1',p1)
