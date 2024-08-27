@@ -16,19 +16,19 @@ let count = 1;
 opt1.onclick = function() {
     app = 'script';
     if(titleOf == 'script') {
-        console.log('good')
+        // console.log('good')
     }else {
         location.href = 'https://4h.kesug.com/store.php?store='+this.textContent+'&app='+app+"&count="+count;
     }
     if(hash == null) {
-        console.log(this.textContent)
+        // console.log(this.textContent)
 
         location.href = 'https://4h.kesug.com/store.php?store='+this.textContent+'&app='+app+"&count="+count;
     
     }else {
         $(most).show(900,function(){
             if(most.style.display == 'none') {
-                console.log('do nothing')
+                // console.log('do nothing')
             }else {
                 $(most).css({
                     display: 'flex'
@@ -46,7 +46,7 @@ opt1.onclick = function() {
 opt2.onclick = function() {
     app = 'mod'
     if(titleOf == 'mod') {
-        console.log('good')
+        // console.log('good')
     }else {
         location.href = 'https://4h.kesug.com/store.php?store='+this.textContent+'&app='+app+"&count="+count;
     }
@@ -56,7 +56,7 @@ opt2.onclick = function() {
 opt3.onclick = function() {
     app = 'tool'
     if(titleOf == 'tool') {
-        console.log('good')
+        // console.log('good')
     }else {
         location.href = 'https://4h.kesug.com/store.php?store='+this.textContent+'&app='+app+"&count="+count;
     }
@@ -89,7 +89,7 @@ next.onclick = function() {
         newNan++
          oldNan = parseFloat(localStorage.setItem('global1',newNan))
         app = 'script'
-        console.log(titleOf)
+        // console.log(titleOf)
         location.href = 'https://4h.kesug.com/store.php?store='+'Mod Games'+'&app='+app+"&count="+newNan;
     }else if(titleOf.trim() == 'mod') {
         if(localStorage.getItem('global1') == 'NaN') {
@@ -98,7 +98,7 @@ next.onclick = function() {
         newNan++
          oldNan = parseFloat(localStorage.setItem('global1',newNan))
         app = 'mod'
-        console.log(titleOf)
+        // console.log(titleOf)
         location.href = 'https://4h.kesug.com/store.php?store='+'Script Free Fire'+'&app='+app+"&count="+newNan;
     }else if(titleOf.trim() == 'tool') {
         if(localStorage.getItem('global1') == 'NaN') {
@@ -107,10 +107,10 @@ next.onclick = function() {
         newNan++
          oldNan = parseFloat(localStorage.setItem('global1',newNan))
         app = 'tool'
-        console.log(titleOf)
+        // console.log(titleOf)
         location.href = 'https://4h.kesug.com/store.php?store='+'Hacking Tools'+'&app='+app+"&count="+newNan;
     }else {
-        console.log('no match')
+        // console.log('no match')
     }
 }
 
@@ -144,7 +144,7 @@ window.onload = function() {
         selectLink.setAttribute('href',url)
         $(most).show(900,function(){
             if(most.style.display == 'none') {
-                console.log('do nothing')
+                // console.log('do nothing')
             }else {
                 $(most).css({
                     display: 'flex'
