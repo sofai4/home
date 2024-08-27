@@ -77,7 +77,7 @@ next.onclick = function() {
         if(con1 == true) {
             location.href = '../store/index.html'
         }else {
-
+            localStorage.removeItem('global1')
         }
         
     }
