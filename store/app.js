@@ -62,7 +62,7 @@ opt3.onclick = function() {
     }
 }
 opt4.onclick = function() {
-    console.log(this.textContent)
+    alert('Coming soon...')
     // location.href = 'http://localhost/4h/store.php?store='+this.textContent;
 }   
 
