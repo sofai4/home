@@ -15,9 +15,10 @@ iframe {
 
 p {
     line-height: 2;
-    padding: 30px;
+    text-align: center;
+    /* padding: 20px; */
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
@@ -25,6 +26,10 @@ p {
         width: 90%;
     }
     p {
-        font-weight: unset;
+        line-height: 2;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
     }
 }

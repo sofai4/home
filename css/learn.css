@@ -12,16 +12,17 @@
     overflow: scroll;
 }
 
-.all video {
+.all iframe {
     width: 700px;
     height: 400px;
 }
 
-.next video {
+.next img {
     height: 200px;
     width: 80%;
     margin-bottom: 40px;
     margin-left: 12%;
+    cursor: pointer;
 }
 .opt {
     display: flex;
@@ -36,7 +37,7 @@ button {
     cursor: pointer;
     padding: 10px;
     border: none;
-    margin-left: 30px;
+    margin-left: 150px;
 }
 
 
@@ -44,7 +45,7 @@ button {
     .all  {
        flex-direction: column;
     }
-    .all video {
+    .all iframe {
         width: 80%;
         transform: translate(5%);
         margin-left: 0;
@@ -68,12 +69,13 @@ button {
     }
     button {
         display: none;
+        cursor: pointer;
     }
 }
 
 
 @media (min-width: 900px) and (max-width: 1300px) {
-    .all video {
+    .all iframe {
         width: 400px;
         height: 400px;
         margin-left: 0;
