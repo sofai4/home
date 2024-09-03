@@ -55,7 +55,7 @@ function getOption(number) {
         //console.log(i)
         if(type == ' Web') {
             i++
-            $('.alert').html(` You Can Vist This <a style='color: blue' 
+            $('.alert').html(` You Can Vist  <a style='color: blue' 
             href='http://myproject4h.kesug.com' target='__blank'
             >MyProjects</a>  <hr> To See Your Order how its look like <hr>
             now if you are Comfortable you can confirm your order &#128512;
@@ -63,14 +63,24 @@ function getOption(number) {
         }else if(type == ' Video Editing') {
             i++
             if(order == 'Basic  10$') {
-                $('.alert').html(`You Can Watch This  <iframe  src="xUnmy3f_xzs">
+                $('.alert').html(`You Can Watch This 
+                <hr>
+                 <iframe  src="https://www.youtube.com/embed/tmVPKRAdtUg"  allowfullscreen>
                 </iframe> <hr> To See Your Order how its look like <hr>
                 now if you are Comfortable you can confirm your order &#128512;`)
             }
             else if(order == 'premium  50$ - 100$') {
-                $('.alert').html(`<video controls src=""></video>`)
+                $('.alert').html(`You Can Watch This 
+                <hr>
+                 <iframe  src="https://www.youtube.com/embed/TDdIHE8voqg"  allowfullscreen>
+                </iframe> <hr> To See Your Order how its look like <hr>
+                now if you are Comfortable you can confirm your order &#128512;`)
             }else if(order == ' Max +100$') {
-                $('.alert').html(`<video controls src=""></video>`)
+                $('.alert').html(`You Can Watch This 
+                <hr>
+                 <iframe  src="https://www.youtube.com/embed/L8JGyvPe6lk"  allowfullscreen>
+                </iframe> <hr> To See Your Order how its look like <hr>
+                now if you are Comfortable you can confirm your order &#128512;`)
             }
             
         }else if(type == ' Advertasing') {
@@ -78,29 +88,67 @@ function getOption(number) {
                 if(order ==' SOFAI 4H 10$') {
                     $('.alert').html(`You Can Vist The channel <a
                      style='color: blue' href=
-                    'https://youtube.com/@SOFAI4H'>SOFAI 4H</a>`)
+                    'https://youtube.com/@SOFAI4H'>SOFAI 4H</a> <hr>
+                    To See Your Order how its look like <hr>
+                now if you are Comfortable you can confirm your order &#128512;`)
                 }else if(order == ' Morgan 4H 5$') {
                     $('.alert').html(`You Can Vist The channel <a
                      style='color: blue' href=
-                    'https://youtube.com/@morgan4h'>MORGAN 4H</a>`)
+                    'https://youtube.com/@morgan4h'>MORGAN 4H</a>
+                    <hr>
+                    To See Your Order how its look like <hr>
+                now if you are Comfortable you can confirm your order &#128512;`)
                 }else if(order == 'Sponsor') {
-                    $('.alert').html(`You Can Watch The Video <a
-                    style='color: blue' href=
-                   'https://youtube.com/videos'>Watch More</a>`)
+                    $('.alert').html(`See This channels and decide what you want to sponsore
+                    <hr>
+                    <a
+                     style='color: blue' href=
+                    'https://youtube.com/@SOFAI4H'>Hacking content</a>
+                    <hr>
+                    <a
+                     style='color: blue' href=
+                    'https://youtube.com/@morgan4h'>Programming content</a>
+                    <hr>
+                    <a
+                     style='color: blue' href=
+                    'https://youtube.com/@tmk4h'>Gaming content</a>
+                    `)
                 }
         }else if (type == ' Voice Over') {
             i++
                 if(order == 'Basic  10$') {
-                    $('.alert').html(` <audio src="" controls></audio>
-                    <audio src="" controls></audio>`)
-                }else if(order == 'premium  50$') {
-                    $('.alert').html(` <audio src="" controls></audio>
+                    $('.alert').html(`You Can Watch arabic version 
                     <hr>
-                    <audio src="" controls></audio>`)
+                     <iframe  src="https://www.youtube.com/embed/lwz0jBPULrM"  allowfullscreen>
+                    </iframe> <hr>
+                    or  english version 
+                    <hr>
+                     <iframe  src="https://www.youtube.com/embed/ThZBd9-PLRU"  allowfullscreen>
+                    </iframe> <hr>
+                    To See Your Order how its look like <hr>
+                    now if you are Comfortable you can confirm your order &#128512;`)
+                }else if(order == 'premium  50$') {
+                    $('.alert').html(`You Can Watch arabic version 
+                    <hr>
+                     <iframe  src="https://www.youtube.com/embed/FnBc_O5IKYw"  allowfullscreen>
+                    </iframe> <hr>
+                    or  english version 
+                    <hr>
+                     <iframe  src="https://www.youtube.com/embed/xUnmy3f_xzs"  allowfullscreen>
+                    </iframe> <hr>
+                    To See Your Order how its look like <hr>
+                    now if you are Comfortable you can confirm your order &#128512;`)
                 }else if(order == ' Max +100$') {
-                    $('.alert').html(`You Can Watch The Video <a
-                    style='color: blue' href=
-                   'https://youtube.com/videos'>Watch More</a>`)
+                    $('.alert').html(`You Can Watch arabic version 
+                    <hr>
+                     <iframe  src="https://www.youtube.com/embed/S3Wh2sT2AdE"  allowfullscreen>
+                    </iframe> <hr>
+                    or  english version 
+                    <hr>
+                     <iframe  src="https://www.youtube.com/embed/j26gG3aHu0I"  allowfullscreen>
+                    </iframe> <hr>
+                    To See Your Order how its look like <hr>
+                    now if you are Comfortable you can confirm your order &#128512;`)
                 }
         }
 
@@ -125,12 +173,15 @@ function getOption(number) {
 // //console.log(location.search)
 let btn = document.getElementsByTagName('button')
 btn[0].onclick = function() {
+    location.href = '#top'
    getOption(0)
 }
 btn[1].onclick = function() {
+    location.href = '#top'
    getOption(1)
 }
 btn[2].onclick = function() {
+    location.href = '#top'
     getOption(2)
 }
 
@@ -202,6 +253,7 @@ if(location.search == '?page=adver') {
         newOne.className = 'b'
         titleText.className = 'p'
         button.onclick = function() {
+            location.href = '#top'
             let order = titleText.textContent
             let type = document.querySelector('h1').textContent
             $('.confirm').show(400, function() {
@@ -223,7 +275,10 @@ if(location.search == '?page=adver') {
                         if(order =='TMK 4H 5$') {
                             $('.alert').html(`You Can Vist The channel <a
                              style='color: blue' href=
-                            'https://youtube.com/@tmk4h'>TMK 4H</a>`)
+                            'https://youtube.com/@tmk4h'>TMK 4H</a>
+                            <hr>
+                            To See Your Order how its look like <hr>
+                        now if you are Comfortable you can confirm your order &#128512;`)
                         }
                          }
                          if(l > 1 ) {

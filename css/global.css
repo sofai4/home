@@ -49,7 +49,7 @@ body {
 }
 .confirm  {
   display: none;
-  position: fixed;
+  position: absolute;
   left: 20%;
   top: 5%;
   width: 30%;
@@ -125,7 +125,7 @@ body {
       left: 30%;
     }
    }
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 300px) and (max-width: 900px) {
   .confirm {
     width: 80%;
     left: 10%;
