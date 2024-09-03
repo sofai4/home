@@ -56,14 +56,16 @@ function getOption(number) {
         if(type == ' Web') {
             i++
             $('.alert').html(` You Can Vist This <a style='color: blue' 
-            href='https://myproject.com/morgan4h' target='__blank'
+            href='http://myproject4h.kesug.com' target='__blank'
             >MyProjects</a>  <hr> To See Your Order how its look like <hr>
             now if you are Comfortable you can confirm your order &#128512;
             `)
         }else if(type == ' Video Editing') {
             i++
             if(order == 'Basic  10$') {
-                $('.alert').html(`<video controls src=""></video>`)
+                $('.alert').html(`You Can Watch This  <iframe  src="xUnmy3f_xzs">
+                </iframe> <hr> To See Your Order how its look like <hr>
+                now if you are Comfortable you can confirm your order &#128512;`)
             }
             else if(order == 'premium  50$ - 100$') {
                 $('.alert').html(`<video controls src=""></video>`)
