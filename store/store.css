@@ -134,6 +134,18 @@ button {
         font-size: medium;
         font-weight: unset; 
     }
+    header
+     ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        margin-bottom: 7%;
+        border-bottom: solid #8a2bbd 3px;
+        width: fit-content;
+    }
+
 }
 
 @media (min-width: 901px) and (max-width: 1300px) {
